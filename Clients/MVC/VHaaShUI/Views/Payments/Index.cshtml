@@ -1,0 +1,44 @@
+﻿@model VHaaShAPIModals.PaymentRequestBody
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    @*<form action='https://secure.payu.in/_payment' method='post'>
+            <input type="hidden" name="key" value="FdIPdMmZ" />
+            <input type="hidden" name="txnid" value="732048223" />
+            <input type="hidden" name="productinfo" value="Test Product" />
+            <input type="hidden" name="amount" value="100" />
+            <input type="hidden" name="email" value="vikul.rathod@gmail.com" />
+            <input type="hidden" name="firstname" value="Vikul" />
+            <input type="hidden" name="lastname" value="Rathod" />
+            <input type="hidden" name="surl" value="http://localhost:49974/payments/success" />
+            <input type="hidden" name="furl" value="http://localhost:49974/payments/failed" />
+            <input type="hidden" name="phone" value="9527788887" />
+            <input type="hidden" name="hash" value="7aa869b1547e7e775e7da6a63975cc505fb64a4afd50a2e3bf62957777caef1525b88f427e9c582b15fb2633a5812337fe6bc833d83d77b0790e2e1937fe0c58" />
+            <input type="submit" value="Pay now">
+        </form>*@
+
+    <form action='@Model.ApiUrl' method='post'>
+        <input type="hidden" name="key" value="@Model.MerchantKey" />
+        <input type="hidden" name="txnid" value="@Model.TransactionNumber" />
+        <input type="hidden" name="productinfo" value="@Model.ProductInfo" />
+        <input type="hidden" name="amount" value="@Model.Amount" />
+        <input type="hidden" name="email" value="@Model.Email" />
+        <input type="hidden" name="firstname" value="@Model.FirstName" />
+        @*<input type="hidden" name="lastname" value="@Model.LastName" />*@
+        <input type="hidden" name="surl" value="@Model.SuccessUrl" />
+        <input type="hidden" name="furl" value="@Model.FailureUrl" />
+        @*<input type="hidden" name="phone" value="@Model.Mobile" />*@
+        <input type="hidden" name="udf1" value="1" />
+        <input type="hidden" name="udf2" value="1" />
+        <input type="hidden" name="udf3" value="1" />
+        <input type="hidden" name="udf4" value="1" />
+        <input type="hidden" name="udf5" value="1" />
+        <input type="hidden" name="hash" value="@Model.Hash" />
+        <input type="submit" value="Pay now">
+    </form>
+</body>
+</html>

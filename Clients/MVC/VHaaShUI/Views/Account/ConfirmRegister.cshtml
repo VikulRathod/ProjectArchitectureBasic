@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+        .success {
+            color: #1d8423;
+        }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div>
+            <h2>Please check your email or mobile to confirm your registration by providing OTP.</h2>
+            <div class="editor-label">
+                @Html.Label("Enter OTP")
+            </div>
+            <div class="editor-field">
+                @Html.Editor("otp")
+            </div>
+
+            <p>
+                <input type="submit" value="Confirm OTP" />
+            </p>
+        </div>     
+        
+        if (!string.IsNullOrEmpty(ViewBag.Message))
+        {
+        <div class="success">
+            <h2>Congratulations, @ViewBag.Message</h2>
+            <span>Click here to @Html.ActionLink("login", "Login")</span>
+        </div>
+        }
+
+        if (ViewBag.SendOtpAgain != null && ViewBag.SendOtpAgain)
+        {
+            Html.ActionLink("Resend OTP", "ResendOtp");
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿@model VHaaShModals.Account.UserInfo
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+    
+        <fieldset>
+            <legend>UserInfo</legend>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.FirstName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.FirstName)
+                @Html.ValidationMessageFor(model => model.FirstName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.LastName)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.LastName)
+                @Html.ValidationMessageFor(model => model.LastName)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.HighestQualification)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.HighestQualification)
+                @Html.ValidationMessageFor(model => model.HighestQualification)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Occupation)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Occupation)
+                @Html.ValidationMessageFor(model => model.Occupation)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Mobile)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Mobile)
+                @Html.ValidationMessageFor(model => model.Mobile)
+            </div>
+
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Email)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </div>
+
+            <p>
+                <input type="submit" value="Register" />
+            </p>
+        </fieldset>
+        
+        <div>
+            @Html.ActionLink("Already registered?", "Login")
+        </div>
+    }
+</body>
+</html>
