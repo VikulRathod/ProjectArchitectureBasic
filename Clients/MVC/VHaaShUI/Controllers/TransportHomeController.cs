@@ -9,9 +9,31 @@ namespace VHaaSh.WEB.Controllers
     public class TransportHomeController : Controller
     {
         // GET: TransportHome
+        public ActionResult About()
+        {
+            return View();
+        }
+        public ActionResult Company()
+        {
+            return View();
+        }
+        public ActionResult Contact()
+        {
+            return View();
+        }
         public ActionResult Index()
         {
             return View();
         }
+        public ActionResult Service()
+        {
+            return View();
+        }
+        public ActionResult Shop()
+        {
+            return View();
+        }
+
+
     }
 }
