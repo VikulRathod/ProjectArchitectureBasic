@@ -19,15 +19,15 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
 
     <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
 
     <!-- fonts style -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="~/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link href="~/css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                 <nav class="navbar navbar-expand-lg custom_nav-container d-lg-none">
                     <a class="navbar-brand" href="#">
                         <div class="logo-box">
-                            <img src="images/logo.png" alt="">
+                            <img src="~/images/logo.png" alt="">
                             <span>
                                 Transportz
                             </span>
@@ -52,7 +52,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav  ">
                             <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="~/Views/TransportHome/Index.cshtml">Home <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.html"> About </a>
@@ -74,7 +74,7 @@
                 </nav>
                 <div class="header_container ">
                     <div class="logo-box">
-                        <img src="images/logo.png" alt="">
+                        <img src="~/images/logo.png" alt="">
                         <span>
                             Transportz
                         </span>
@@ -85,7 +85,7 @@
 
                                 <a href="" class="ml-4">
                                     <div>
-                                        <img src="images/phone.png" alt="" />
+                                        <img src="~/images/phone.png" alt="" />
                                     </div>
                                     <span>
                                         (+71) 258964785
@@ -93,7 +93,7 @@
                                 </a>
                                 <a href="" class="ml-4">
                                     <div>
-                                        <img src="images/mail.png" alt="" />
+                                        <img src="~/images/mail.png" alt="" />
                                     </div>
                                     <span>
                                         transportz@gmail.com
@@ -103,22 +103,22 @@
                             <div class="header_top-social">
                                 <div>
                                     <a href="">
-                                        <img src="images/fb.png" alt="">
+                                        <img src="~/images/fb.png" alt="">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="">
-                                        <img src="images/twitter.png" alt="">
+                                        <img src="~/images/twitter.png" alt="">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="">
-                                        <img src="images/g-plus.png" alt="">
+                                        <img src="~/images/g-plus.png" alt="">
                                     </a>
                                 </div>
                                 <div>
                                     <a href="">
-                                        <img src="images/linkedin.png" alt="">
+                                        <img src="~/images/linkedin.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -136,22 +136,29 @@
                                     <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
                                         <ul class="navbar-nav  ">
                                             <li class="nav-item active">
-                                                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                                @*<a class="nav-link" href="~/Views/TransportHome/Index.cshtml">Home <span class="sr-only">(current)</span></a>
+                                                    <a class="nav-link" href="~/Views/TransportHome/Index.cshtml">Home <span class="sr-only">(current)</span></a>*@
+                                                @Html.ActionLink("Home", "Index", null, new { @class = "nav-link" })
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="about.html"> About </a>
+                                                @*<a class="nav-link" href="about.html"> About </a>*@
+                                                @Html.ActionLink("About", "About", null, new { @class = "nav-link" })
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="service.html"> Service</a>
+                                                @*<a class="nav-link" href="service.html"> Service</a>*@
+                                                @Html.ActionLink("Service", "Service", null, new { @class = "nav-link" })
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="shop.html"> Shop </a>
+                                                @*<a class="nav-link" href="shop.html"> Shop </a>*@
+                                                @Html.ActionLink("Shop", "Shop", null, new { @class = "nav-link" })
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="company.html"> Company </a>
+                                                @*<a class="nav-link" href="company.html"> Company </a>*@
+                                                @Html.ActionLink("Company", "Company", null, new { @class = "nav-link" })
                                             </li>
                                             <li class="nav-item ">
-                                                <a class="nav-link pr-0" href="contact.html">Contact us</a>
+                                                @*<a class="nav-link pr-0" href="contact.html">Contact us</a>*@
+                                                @Html.ActionLink("Contact us", "Contact", null, new { @class = "nav-link pr-0" })
                                             </li>
                                         </ul>
 
@@ -185,7 +192,7 @@
                                                 <form action="">
                                                     <div class="search_input">
                                                         <input type="text">
-                                                        <img src="images/search-icon.png" alt="">
+                                                        <img src="~/images/search-icon.png" alt="">
                                                     </div>
 
                                                     <button>
@@ -207,7 +214,7 @@
                                                             <span>
                                                                 Read More
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="ml-3">
@@ -216,7 +223,7 @@
                                                             <span>
                                                                 Get A Quote
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -226,7 +233,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="slider_img-box">
-                                            <img src="images/truck.png" alt="" class="img-fluid">
+                                            <img src="~/images/truck.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -245,7 +252,7 @@
                                                 <form action="">
                                                     <div class="search_input">
                                                         <input type="text">
-                                                        <img src="images/search-icon.png" alt="">
+                                                        <img src="~/images/search-icon.png" alt="">
                                                     </div>
 
                                                     <button>
@@ -267,7 +274,7 @@
                                                             <span>
                                                                 Read More
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="ml-3">
@@ -276,7 +283,7 @@
                                                             <span>
                                                                 Get A Quote
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -286,7 +293,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="slider_img-box">
-                                            <img src="images/truck.png" alt="" class="img-fluid">
+                                            <img src="~/images/truck.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -305,7 +312,7 @@
                                                 <form action="">
                                                     <div class="search_input">
                                                         <input type="text">
-                                                        <img src="images/search-icon.png" alt="">
+                                                        <img src="~/images/search-icon.png" alt="">
                                                     </div>
 
                                                     <button>
@@ -327,7 +334,7 @@
                                                             <span>
                                                                 Read More
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="ml-3">
@@ -336,7 +343,7 @@
                                                             <span>
                                                                 Get A Quote
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -347,7 +354,7 @@
                                     <div class="col-md-6">
                                         <div class="slider_img-box">
 
-                                            <img src="images/truck.png" alt="" class="img-fluid">
+                                            <img src="~/images/truck.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -366,7 +373,7 @@
                                                 <form action="">
                                                     <div class="search_input">
                                                         <input type="text">
-                                                        <img src="images/search-icon.png" alt="">
+                                                        <img src="~/images/search-icon.png" alt="">
                                                     </div>
 
                                                     <button>
@@ -388,7 +395,7 @@
                                                             <span>
                                                                 Read More
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                     <div class="ml-3">
@@ -397,7 +404,7 @@
                                                             <span>
                                                                 Get A Quote
                                                             </span>
-                                                            <img src="images/white-next.png" alt="">
+                                                            <img src="~/images/white-next.png" alt="">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -407,7 +414,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="slider_img-box">
-                                            <img src="images/truck.png" alt="" class="img-fluid">
+                                            <img src="~/images/truck.png" alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -445,7 +452,7 @@
                 <div class="col-md-6">
                     <div class="about_img-box">
 
-                        <img src="images/a-truck.jpg" alt="" class="img-fluid">
+                        <img src="~/images/a-truck.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6 about_detail-container">
@@ -461,7 +468,7 @@
                         </p>
                         <div class="d-flex  justify-content-end">
                             <a href="" class="quote-btn about-btn">
-                                <img src="images/white-next.png" alt="">
+                                <img src="~/images/white-next.png" alt="">
                                 <span>
                                     About More
                                 </span>
@@ -487,7 +494,7 @@
             <div class="row layout_padding2-top">
                 <div class="col-md-4">
                     <div class="service_img-box s-b-1">
-                        <img src="images/service-1.jpg" alt="">
+                        <img src="~/images/service-1.jpg" alt="">
                         <div class="d-flex">
                             <h3>
                                 CARGO
@@ -509,7 +516,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="service_img-box s-b-2">
-                        <img src="images/service-2.jpg" alt="">
+                        <img src="~/images/service-2.jpg" alt="">
                         <div class="d-flex">
                             <h3>
                                 LOGISTIC SERVICE
@@ -532,7 +539,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="service_img-box s-b-3">
-                        <img src="images/service-3.jpg" alt="">
+                        <img src="~/images/service-3.jpg" alt="">
                         <div class="d-flex">
                             <h3>
                                 STORAGE
@@ -581,7 +588,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="shop_img-box">
-                        <img src="images/gift.jpg" alt="" class="img-fluid">
+                        <img src="~/images/gift.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -609,7 +616,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-1">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -626,7 +633,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-2">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -649,7 +656,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-1">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -666,7 +673,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-2">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -689,7 +696,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-1">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -706,7 +713,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-2">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -729,7 +736,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-1">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -746,7 +753,7 @@
                             <div class="col-md-6">
                                 <div class="client_box c-b-2">
                                     <div class="client_img">
-                                        <img src="images/client.png" alt="" class="img-fluid">
+                                        <img src="~/images/client.png" alt="" class="img-fluid">
                                     </div>
                                     <div class="client_detail">
                                         <h5>
@@ -790,7 +797,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="company_img-box">
-                        <img src="images/company.jpg" alt="" class="img-fluid">
+                        <img src="~/images/company.jpg" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -844,7 +851,7 @@
             <div class="row  mb-3 pb-4">
                 <div class="col-md-3 info_logo">
                     <div class="logo-box">
-                        <img src="images/logo-white.png" alt="">
+                        <img src="~/images/logo-white.png" alt="">
                         <span>
                             Transportz
                         </span>
@@ -855,22 +862,22 @@
                     <div class="info_social">
                         <div>
                             <a href="">
-                                <img src="images/fb.png" alt="">
+                                <img src="~/images/fb.png" alt="">
                             </a>
                         </div>
                         <div>
                             <a href="">
-                                <img src="images/twitter.png" alt="">
+                                <img src="~/images/twitter.png" alt="">
                             </a>
                         </div>
                         <div>
                             <a href="">
-                                <img src="images/g-plus.png" alt="">
+                                <img src="~/images/g-plus.png" alt="">
                             </a>
                         </div>
                         <div>
                             <a href="">
-                                <img src="images/linkedin.png" alt="">
+                                <img src="~/images/linkedin.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -958,33 +965,32 @@
         </p>
     </section>
     <!-- footer section -->
-
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.js"></script>
 
 
     <script>
-    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
-    // Australia.
-    function initMap() {
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 11,
-        center: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-      });
+        // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+        // Australia.
+        function initMap() {
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 11,
+                center: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+            });
 
-      var image = 'images/maps-and-flags.png';
-      var beachMarker = new google.maps.Marker({
-        position: {
-          lat: 40.645037,
-          lng: -73.880224
-        },
-        map: map,
-        icon: image
-      });
-    }
+            var image = 'images/maps-and-flags.png';
+            var beachMarker = new google.maps.Marker({
+                position: {
+                    lat: 40.645037,
+                    lng: -73.880224
+                },
+                map: map,
+                icon: image
+            });
+        }
     </script>
     <!-- google map js -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
