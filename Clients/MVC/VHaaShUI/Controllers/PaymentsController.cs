@@ -49,6 +49,8 @@ namespace VHaaSh.WEB.Controllers
         // GET: Payments
         public ActionResult Success()
         {
+            // need to call api success method
+
             return View();
         }
 
