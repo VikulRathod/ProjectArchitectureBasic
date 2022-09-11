@@ -165,6 +165,11 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\patient\Views\web.config" />
+    <Content Include="Areas\admin\Views\web.config" />
+    <Content Include="Areas\bed\Views\web.config" />
+    <Content Include="Areas\admission\Views\web.config" />
+    <Content Include="Areas\staff\Views\web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -184,6 +189,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Areas\admin\adminAreaRegistration.cs" />
+    <Compile Include="Areas\admission\admissionAreaRegistration.cs" />
+    <Compile Include="Areas\bed\bedAreaRegistration.cs" />
+    <Compile Include="Areas\patient\patientAreaRegistration.cs" />
+    <Compile Include="Areas\staff\staffAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
@@ -220,6 +230,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\admin\Controllers\" />
+    <Folder Include="Areas\admin\Models\" />
+    <Folder Include="Areas\admin\Views\Shared\" />
+    <Folder Include="Areas\admission\Controllers\" />
+    <Folder Include="Areas\admission\Models\" />
+    <Folder Include="Areas\admission\Views\Shared\" />
+    <Folder Include="Areas\bed\Controllers\" />
+    <Folder Include="Areas\bed\Models\" />
+    <Folder Include="Areas\bed\Views\Shared\" />
+    <Folder Include="Areas\patient\Controllers\" />
+    <Folder Include="Areas\patient\Models\" />
+    <Folder Include="Areas\patient\Views\Shared\" />
+    <Folder Include="Areas\staff\Controllers\" />
+    <Folder Include="Areas\staff\Models\" />
+    <Folder Include="Areas\staff\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
