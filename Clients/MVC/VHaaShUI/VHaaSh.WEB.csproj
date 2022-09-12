@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -74,6 +75,10 @@
     </Reference>
     <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -155,9 +160,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="css\bootstrap.css" />
-    <Content Include="css\responsive.css" />
-    <Content Include="css\style.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -165,41 +167,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="images\a-truck.jpg" />
-    <Content Include="images\blue-bg.png" />
-    <Content Include="images\circle-bg.jpg" />
-    <Content Include="images\client.png" />
-    <Content Include="images\client1-bg.png" />
-    <Content Include="images\client2-bg.png" />
-    <Content Include="images\company.jpg" />
-    <Content Include="images\fb.png" />
-    <Content Include="images\g-plus.png" />
-    <Content Include="images\gift.jpg" />
-    <Content Include="images\hbg-2.png" />
-    <Content Include="images\hbg-3.png" />
-    <Content Include="images\hbg.png" />
-    <Content Include="images\header-bg.jpg" />
-    <Content Include="images\info-bg.png" />
-    <Content Include="images\linkedin.png" />
-    <Content Include="images\logo-white.png" />
-    <Content Include="images\logo.png" />
-    <Content Include="images\mail.png" />
-    <Content Include="images\main-bg.jpg" />
-    <Content Include="images\menu.jpg" />
-    <Content Include="images\menu.png" />
-    <Content Include="images\next.png" />
-    <Content Include="images\phone.png" />
-    <Content Include="images\prev.png" />
-    <Content Include="images\search-icon.png" />
-    <Content Include="images\service-1.jpg" />
-    <Content Include="images\service-2.jpg" />
-    <Content Include="images\service-3.jpg" />
-    <Content Include="images\slidrer-bg.jpg" />
-    <Content Include="images\truck.png" />
-    <Content Include="images\twitter.png" />
-    <Content Include="images\white-next.png" />
-    <Content Include="js\bootstrap.js" />
-    <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -220,7 +187,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
-    <Compile Include="Controllers\TransportHomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -242,14 +208,6 @@
     <Content Include="Views\Payments\Index.cshtml" />
     <Content Include="Views\Payments\Success.cshtml" />
     <Content Include="Views\Payments\Failed.cshtml" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\TransportHome\About.cshtml" />
-    <Content Include="Views\TransportHome\Company.cshtml" />
-    <Content Include="Views\TransportHome\Contact.cshtml" />
-    <Content Include="Views\TransportHome\Index.cshtml" />
-    <Content Include="Views\TransportHome\Service.cshtml" />
-    <Content Include="Views\TransportHome\Shop.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -312,6 +270,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
     <ItemGroup>
