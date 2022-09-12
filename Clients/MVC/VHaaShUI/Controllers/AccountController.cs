@@ -21,6 +21,7 @@ namespace VHaaSh.WEB.Controllers
         public AccountController(IRegisterApiController registerApi,
             IApplicationLogsBL logs)
         {
+            
             _registerApi = registerApi;
             _logs = logs;
         }
@@ -122,6 +123,7 @@ namespace VHaaSh.WEB.Controllers
 
                 // call change passwor method on first time login
                 //return RedirectToAction("ChangePassword");
+                //.......
 
                 return RedirectToAction("Welcome", "Home");
             }
