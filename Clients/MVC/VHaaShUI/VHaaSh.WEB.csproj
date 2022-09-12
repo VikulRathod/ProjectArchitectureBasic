@@ -15,7 +15,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VHaaSh.WEB</RootNamespace>
     <AssemblyName>VHaaSh.WEB</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -79,14 +79,12 @@
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
@@ -105,7 +103,6 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.8\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -140,7 +137,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="Unity.Abstractions, Version=5.11.1.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.5.11.1\lib\net46\Unity.Abstractions.dll</HintPath>
     </Reference>
@@ -177,6 +173,47 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="TemplateFiles\css\easy-responsive-tabs.css" />
+    <Content Include="TemplateFiles\css\flexslider.css" />
+    <Content Include="TemplateFiles\css\fonts\themify.svg" />
+    <Content Include="TemplateFiles\css\icons.css" />
+    <Content Include="TemplateFiles\css\ie7\ie7.css" />
+    <Content Include="TemplateFiles\css\ie7\ie7.js" />
+    <Content Include="TemplateFiles\css\owl.carousel.css" />
+    <Content Include="TemplateFiles\css\style.css" />
+    <Content Include="TemplateFiles\images\1.jpg" />
+    <Content Include="TemplateFiles\images\2.jpg" />
+    <Content Include="TemplateFiles\images\3.jpg" />
+    <Content Include="TemplateFiles\images\agent-big.jpg" />
+    <Content Include="TemplateFiles\images\agent1.jpg" />
+    <Content Include="TemplateFiles\images\agent2.jpg" />
+    <Content Include="TemplateFiles\images\agent3.jpg" />
+    <Content Include="TemplateFiles\images\agent4.jpg" />
+    <Content Include="TemplateFiles\images\footer-line.jpg" />
+    <Content Include="TemplateFiles\images\icon1.png" />
+    <Content Include="TemplateFiles\images\icon2.png" />
+    <Content Include="TemplateFiles\images\icon3.png" />
+    <Content Include="TemplateFiles\images\partner-logo-01.jpg" />
+    <Content Include="TemplateFiles\images\partner-logo-02.jpg" />
+    <Content Include="TemplateFiles\images\partner-logo-03.jpg" />
+    <Content Include="TemplateFiles\images\partner-logo-04.jpg" />
+    <Content Include="TemplateFiles\images\partner-logo-05.jpg" />
+    <Content Include="TemplateFiles\images\partner-logo-06.jpg" />
+    <Content Include="TemplateFiles\images\partner-slider-arrow.png" />
+    <Content Include="TemplateFiles\images\people-01.jpg" />
+    <Content Include="TemplateFiles\images\people-02.jpg" />
+    <Content Include="TemplateFiles\images\people-03.jpg" />
+    <Content Include="TemplateFiles\images\people-04.jpg" />
+    <Content Include="TemplateFiles\images\people-05.jpg" />
+    <Content Include="TemplateFiles\images\product-img.jpg" />
+    <Content Include="TemplateFiles\images\slider-img.jpg" />
+    <Content Include="TemplateFiles\images\slider-img1.jpg" />
+    <Content Include="TemplateFiles\images\slider-img2.jpg" />
+    <Content Include="TemplateFiles\images\testimonial-active-bg.jpg" />
+    <Content Include="TemplateFiles\js\custom.js" />
+    <Content Include="TemplateFiles\js\easyResponsiveTabs.js" />
+    <Content Include="TemplateFiles\js\jquery.flexslider-min.js" />
+    <Content Include="TemplateFiles\js\owl.carousel.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -185,6 +222,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AKInsuranceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -208,6 +246,19 @@
     <Content Include="Views\Payments\Index.cshtml" />
     <Content Include="Views\Payments\Success.cshtml" />
     <Content Include="Views\Payments\Failed.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\AKInsurance\Index.cshtml" />
+    <Content Include="Views\AKInsurance\ContactUs.cshtml" />
+    <Content Include="Views\AKInsurance\BlogPage.cshtml" />
+    <Content Include="Views\AKInsurance\BlogDetails.cshtml" />
+    <Content Include="TemplateFiles\css\fonts\themify.eot" />
+    <Content Include="TemplateFiles\css\fonts\themify.ttf" />
+    <Content Include="TemplateFiles\css\fonts\themify.woff" />
+    <Content Include="TemplateFiles\images\Thumbs.db" />
+    <Content Include="TemplateFiles\less\header-footer.less" />
+    <Content Include="TemplateFiles\less\prepros-6.config" />
+    <Content Include="TemplateFiles\less\style.less" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -265,19 +316,19 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
-  </Target>
   <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
     <ItemGroup>
       <RoslynFiles Include="$(CscToolPath)\*" />
     </ItemGroup>
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
