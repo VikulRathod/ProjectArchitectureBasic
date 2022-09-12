@@ -9,7 +9,7 @@ namespace VHaaSh.WEB.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        [AllowAnonymous]
+        [AllowAnonymous] //Filter
         public ActionResult Index()
         {
             return View();
