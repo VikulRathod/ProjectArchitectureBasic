@@ -21,8 +21,7 @@ namespace VHaaSh.WEB.Controllers
         public AccountController(IRegisterApiController registerApi,
             IApplicationLogsBL logs)
         {
-            //123
-            //567
+            
             _registerApi = registerApi;
             _logs = logs;
         }
