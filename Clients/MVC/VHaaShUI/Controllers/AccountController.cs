@@ -22,6 +22,7 @@ namespace VHaaSh.WEB.Controllers
             IApplicationLogsBL logs)
         {
             //123
+            //567
             _registerApi = registerApi;
             _logs = logs;
         }
