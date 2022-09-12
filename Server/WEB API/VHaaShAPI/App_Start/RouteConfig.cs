@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace VHaaSh.WEB
+namespace VHaaSh.API
 {
     public class RouteConfig
     {
@@ -16,8 +16,9 @@ namespace VHaaSh.WEB
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "HospitalHome", action = "Index", id = UrlParameter.Optional }
+                defaults: new { action = "Index", id = UrlParameter.Optional }
             );
         }
     }
 }
+
