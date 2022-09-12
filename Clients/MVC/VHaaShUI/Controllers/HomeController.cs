@@ -12,6 +12,7 @@ namespace VHaaSh.WEB.Controllers
         [AllowAnonymous]
         public ActionResult Index()
         {
+            //Trying to learn GIT
             return View();
         }
 

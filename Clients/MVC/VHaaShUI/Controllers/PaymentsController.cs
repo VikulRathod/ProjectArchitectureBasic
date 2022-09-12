@@ -7,10 +7,13 @@ using System.Web.Mvc;
 using VHaaSh.API.Client.Services.Payment;
 using VHaaSh.UI.BLL.Logs;
 using VHaaShAPIModals;
+using VHaaSh.WEB.Controllers;
 
 namespace VHaaSh.WEB.Controllers
 {
     public class PaymentsController : Controller
+
+
     {
         private IPaymentApiController _paymentApi;
         private IApplicationLogsBL _logs;
