@@ -10,6 +10,7 @@ namespace VHaaSh.WEB.Controllers
     public class HomeController : Controller
     {
         [AllowAnonymous]
+        //test
         public ActionResult Index()
         {
             return View();
