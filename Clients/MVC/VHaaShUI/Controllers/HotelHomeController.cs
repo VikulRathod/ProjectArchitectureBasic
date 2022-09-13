@@ -11,6 +11,7 @@ namespace VHaaSh.WEB.Controllers
         // GET: HotelHome
         public ActionResult Index()
         {
+            // Test Demo 2
             return View();
         }
     }
