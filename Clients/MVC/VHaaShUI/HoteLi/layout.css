@@ -1,0 +1,29 @@
+#main {width:976px; margin:0 auto; position:relative;}
+
+#header {height:526px; background:url(images/header-bg-top.jpg) no-repeat left top;}
+#header.small { height:414px;}
+#header, #content, #footer { font-size:0.75em;}
+
+.col-1, .col-2, .col-3 { float:left;}
+
+.aside { float:left; width:236px; margin-right:50px;}
+.content { float:left; width:594px; position:relative;}
+
+/*======= index.html =======*/
+#page1 #content .line-ver { background-position:297px top;}
+#page1 #content .col-1 {width:214px; margin-right:112px;}
+#page1 #content .col-2 { width:223px;}
+
+/*======= index-1.html =======*/
+#page2 #content .col-1 {width:173px; margin-right:37px;}
+#page2 #content .col-2 {width:173px; margin-right:37px;}
+#page2 #content .col-3 {width:173px;}
+
+/*======= index-2.html =======*/
+#page3 #content .col-1 {width:173px; margin-right:37px;}
+#page3 #content .col-2 {width:173px; margin-right:37px;}
+#page3 #content .col-3 {width:173px;}
+
+
+/*=========================*/
+
