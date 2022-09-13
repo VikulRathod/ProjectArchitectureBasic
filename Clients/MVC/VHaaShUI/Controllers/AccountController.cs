@@ -17,7 +17,7 @@ namespace VHaaSh.WEB.Controllers
     {
         private IRegisterApiController _registerApi;
         private IApplicationLogsBL _logs;
-        //Practice Comment 
+
         public AccountController(IRegisterApiController registerApi,
             IApplicationLogsBL logs)
         {
