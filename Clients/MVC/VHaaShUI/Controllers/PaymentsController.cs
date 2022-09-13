@@ -25,6 +25,8 @@ namespace VHaaSh.WEB.Controllers
         // GET: Payments
         public ActionResult Index()
         {
+
+            //INDEX ACTION METHOD LOGIC
             PaymentRequestBody paymentRequestBody = new PaymentRequestBody()
             {
                 FirstName = "Aniket", LastName = "Patil",
