@@ -56,6 +56,7 @@ namespace VHaaSh.WEB.Controllers
 
         public ActionResult Failed()
         {
+            // need to call api success method
             return View();
         }
     }
