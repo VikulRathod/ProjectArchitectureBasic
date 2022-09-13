@@ -29,6 +29,7 @@ namespace VHaaSh.WEB.Controllers
         [HttpGet]
         public ActionResult Register()
         {
+            //please register herer
             _logs.Info("Returning register view");
             return View();
         }
