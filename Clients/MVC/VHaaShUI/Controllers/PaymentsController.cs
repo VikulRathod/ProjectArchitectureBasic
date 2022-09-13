@@ -12,11 +12,6 @@ namespace VHaaSh.WEB.Controllers
 {
     public class PaymentsController : Controller
     {
-
-        // need to write a field
-
-        // need to write a constroctro
-
         private IPaymentApiController _paymentApi;
         private IApplicationLogsBL _logs;
 
