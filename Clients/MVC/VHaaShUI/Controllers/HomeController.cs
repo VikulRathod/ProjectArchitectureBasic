@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace VHaaSh.WEB.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class HomeController : Controller
     {
         [AllowAnonymous]
@@ -16,6 +16,21 @@ namespace VHaaSh.WEB.Controllers
         }
 
         public ActionResult Welcome()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            return View();
+        }
+
+        public ActionResult Service()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
         {
             return View();
         }

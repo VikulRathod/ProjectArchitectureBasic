@@ -26,6 +26,7 @@
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
     <Use64BitIISExpress />
+    <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,6 +46,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.4.1.9004, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -124,6 +128,9 @@
     <Reference Include="System.Web.Mvc, Version=5.2.8.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.8\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.8\lib\net45\System.Web.Razor.dll</HintPath>
     </Reference>
@@ -150,6 +157,9 @@
     <Reference Include="Unity.Mvc5, Version=1.4.0.0, Culture=neutral, PublicKeyToken=43da31bc42a85347, processorArchitecture=MSIL">
       <HintPath>..\packages\Unity.Mvc5.1.4.0\lib\net45\Unity.Mvc5.dll</HintPath>
     </Reference>
+    <Reference Include="WebGrease, Version=1.5.2.14234, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Web.Infrastructure">
@@ -161,12 +171,162 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FreeTemplate\car-rental-html-template.jpg" />
+    <Content Include="FreeTemplate\css\bootstrap.min.css" />
+    <Content Include="FreeTemplate\css\style.css" />
+    <Content Include="FreeTemplate\img\about.png" />
+    <Content Include="FreeTemplate\img\banner-left.png" />
+    <Content Include="FreeTemplate\img\banner-right.png" />
+    <Content Include="FreeTemplate\img\bg-banner.jpg" />
+    <Content Include="FreeTemplate\img\car-rent-1.png" />
+    <Content Include="FreeTemplate\img\car-rent-2.png" />
+    <Content Include="FreeTemplate\img\car-rent-3.png" />
+    <Content Include="FreeTemplate\img\car-rent-4.png" />
+    <Content Include="FreeTemplate\img\car-rent-5.png" />
+    <Content Include="FreeTemplate\img\car-rent-6.png" />
+    <Content Include="FreeTemplate\img\carousel-1.jpg" />
+    <Content Include="FreeTemplate\img\carousel-2.jpg" />
+    <Content Include="FreeTemplate\img\gallery-1.jpg" />
+    <Content Include="FreeTemplate\img\gallery-2.jpg" />
+    <Content Include="FreeTemplate\img\gallery-3.jpg" />
+    <Content Include="FreeTemplate\img\gallery-4.jpg" />
+    <Content Include="FreeTemplate\img\gallery-5.jpg" />
+    <Content Include="FreeTemplate\img\gallery-6.jpg" />
+    <Content Include="FreeTemplate\img\team-1.jpeg" />
+    <Content Include="FreeTemplate\img\team-2.jpg" />
+    <Content Include="FreeTemplate\img\team-3.jpg" />
+    <Content Include="FreeTemplate\img\team-4.jpg" />
+    <Content Include="FreeTemplate\img\testimonial-1.jpg" />
+    <Content Include="FreeTemplate\img\testimonial-2.jpg" />
+    <Content Include="FreeTemplate\img\testimonial-3.jpg" />
+    <Content Include="FreeTemplate\img\testimonial-4.jpg" />
+    <Content Include="FreeTemplate\img\vendor-1.png" />
+    <Content Include="FreeTemplate\img\vendor-2.png" />
+    <Content Include="FreeTemplate\img\vendor-3.png" />
+    <Content Include="FreeTemplate\img\vendor-4.png" />
+    <Content Include="FreeTemplate\img\vendor-5.png" />
+    <Content Include="FreeTemplate\img\vendor-6.png" />
+    <Content Include="FreeTemplate\img\vendor-7.png" />
+    <Content Include="FreeTemplate\img\vendor-8.png" />
+    <Content Include="FreeTemplate\js\main.js" />
+    <Content Include="FreeTemplate\lib\easing\easing.js" />
+    <Content Include="FreeTemplate\lib\easing\easing.min.js" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="FreeTemplate\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="FreeTemplate\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="FreeTemplate\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="FreeTemplate\lib\tempusdominus\css\tempusdominus-bootstrap-4.css" />
+    <Content Include="FreeTemplate\lib\tempusdominus\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="FreeTemplate\lib\tempusdominus\js\moment-timezone.min.js" />
+    <Content Include="FreeTemplate\lib\tempusdominus\js\moment.min.js" />
+    <Content Include="FreeTemplate\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
+    <Content Include="FreeTemplate\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="FreeTemplate\lib\waypoints\links.php" />
+    <Content Include="FreeTemplate\lib\waypoints\waypoints.min.js" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Areas\BikeArea\Views\web.config" />
-    <Content Include="Areas\BikeArea\Views\Home\IndexView.cshtml" />
+    <Content Include="Areas\Bike\Views\web.config" />
+    <Content Include="Areas\Bike\Views\Home\IndexView.cshtml" />
+    <Content Include="FreeTemplate\lib\owlcarousel\LICENSE" />
+    <Content Include="FreeTemplate\scss\bootstrap.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_background-variant.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_badge.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_float.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_grid-framework.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_hover.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_nav-divider.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_screen-reader.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_size.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_table-row.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_text-emphasis.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_text-hide.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\mixins\_visibility.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_align.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_background.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_borders.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_clearfix.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_display.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_embed.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_flex.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_float.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_interactions.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_overflow.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_position.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_screenreaders.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_shadows.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_sizing.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_spacing.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_stretched-link.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_text.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\utilities\_visibility.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_alert.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_badge.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_card.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_close.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_code.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_custom-forms.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_forms.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_functions.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_grid.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_images.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_input-group.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_jumbotron.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_media.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_modal.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_nav.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_popover.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_print.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_progress.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_root.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_tables.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_type.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="FreeTemplate\scss\bootstrap\scss\_variables.scss" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -187,10 +347,9 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="App_Start\RouteConfig2.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="Areas\BikeArea\BikeAreaAreaRegistration.cs" />
-    <Compile Include="Areas\BikeArea\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Bike\BikeAreaRegistration.cs" />
+    <Compile Include="Areas\Bike\Controllers\BikeHomeController.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
@@ -218,6 +377,9 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Service.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -230,8 +392,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\BikeArea\Data\" />
-    <Folder Include="Areas\BikeArea\Views\Shared\" />
+    <Folder Include="Areas\Bike\Data\" />
+    <Folder Include="Areas\Bike\Views\Shared\" />
     <Folder Include="Data\" />
     <Folder Include="Models\" />
   </ItemGroup>

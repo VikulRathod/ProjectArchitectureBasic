@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace VHaaSh.WEB.Areas.BikeArea.Controllers
 {
-    public class HomeController : Controller
+    public class BikeHomeController : Controller
     {
         // GET: BikeArea/Home
         public ActionResult Index()

@@ -1,22 +1,22 @@
 ﻿using System.Web.Mvc;
 
-namespace VHaaSh.WEB.Areas.BikeArea
+namespace VHaaSh.WEB.Areas.CarArea
 {
-    public class BikeAreaAreaRegistration : AreaRegistration 
+    public class CarAreaAreaRegistration : AreaRegistration 
     {
         public override string AreaName 
         {
             get 
             {
-                return "BikeArea";
+                return "CarArea";
             }
         }
 
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                "BikeArea_default",
-                "BikeArea/{controller}/{action}/{id}",
+                "CarArea_default",
+                "CarArea/{controller}/{action}/{id}",
                 new { action = "Index", id = UrlParameter.Optional }
             );
         }
