@@ -157,6 +157,39 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\maicons.css" />
+    <Content Include="assets\css\theme.css" />
+    <Content Include="assets\fonts\maicons.svg" />
+    <Content Include="assets\img\ajax-loader.gif" />
+    <Content Include="assets\img\app_store.svg" />
+    <Content Include="assets\img\banner-pattern.svg" />
+    <Content Include="assets\img\bg-doctor.png" />
+    <Content Include="assets\img\bg_image_1.jpg" />
+    <Content Include="assets\img\blog\blog_1.jpg" />
+    <Content Include="assets\img\blog\blog_2.jpg" />
+    <Content Include="assets\img\blog\blog_3.jpg" />
+    <Content Include="assets\img\blog\blog_4.jpg" />
+    <Content Include="assets\img\blog\blog_5.jpg" />
+    <Content Include="assets\img\doctors\doctor_1.jpg" />
+    <Content Include="assets\img\doctors\doctor_2.jpg" />
+    <Content Include="assets\img\doctors\doctor_3.jpg" />
+    <Content Include="assets\img\google_play.svg" />
+    <Content Include="assets\img\mobile_app.png" />
+    <Content Include="assets\img\person\person_1.jpg" />
+    <Content Include="assets\img\person\person_2.jpg" />
+    <Content Include="assets\img\person\person_3.jpg" />
+    <Content Include="assets\img\person\person_4.jpg" />
+    <Content Include="assets\js\bootstrap.bundle.min.js" />
+    <Content Include="assets\js\google-maps.js" />
+    <Content Include="assets\js\jquery-3.5.1.min.js" />
+    <Content Include="assets\js\theme.js" />
+    <Content Include="assets\vendor\animate\animate.css" />
+    <Content Include="assets\vendor\owl-carousel\ajax-loader.gif" />
+    <Content Include="assets\vendor\owl-carousel\css\owl.carousel.css" />
+    <Content Include="assets\vendor\owl-carousel\js\owl.carousel.js" />
+    <Content Include="assets\vendor\owl-carousel\js\owl.carousel.min.js" />
+    <Content Include="assets\vendor\wow\wow.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -165,6 +198,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\maicons.eot" />
+    <Content Include="assets\fonts\maicons.ttf" />
+    <Content Include="assets\fonts\maicons.woff" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -186,6 +222,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HospitalHomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,6 +253,13 @@
     <Content Include="Views\HotelUi\restaurant.cshtml" />
     <Content Include="Views\HotelUi\testimonials.cshtml" />
     <Content Include="Views\HotelUi\booking.cshtml" />
+    <Content Include="Views\HospitalHome\Index.cshtml" />
+    <Content Include="Views\HospitalHome\Doctors.cshtml" />
+    <Content Include="Views\HospitalHome\About.cshtml" />
+    <Content Include="Views\HospitalHome\Blog.cshtml" />
+    <Content Include="Views\HospitalHome\Blog_Details.cshtml" />
+    <Content Include="Views\HospitalHome\Contact.cshtml" />
+    <Content Include="Views\Shared\_hospitalLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
