@@ -177,6 +177,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Styles Folder\info.txt" />
+    <Content Include="Styles Folder\script.js" />
+    <Content Include="Styles Folder\style.css" />
     <Content Include="Templates\css\bootstrap-datetimepicker.min.css" />
     <Content Include="Templates\css\bootstrap.min.css" />
     <Content Include="Templates\css\flexslider.css" />
@@ -275,6 +278,7 @@
     <Content Include="Templates\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Templates\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Templates\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Views\HotelBooking\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
