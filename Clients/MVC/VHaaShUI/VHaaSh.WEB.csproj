@@ -185,7 +185,6 @@
     <Content Include="Templates\css\templatemo-style.css" />
     <Content Include="Templates\fonts\fontawesome-webfont.svg" />
     <Content Include="Templates\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Templates\img\about-1.jpg" />
     <Content Include="Templates\img\about-2.jpg" />
     <Content Include="Templates\img\about-3.jpg" />
     <Content Include="Templates\img\about-4.jpg" />
@@ -195,6 +194,10 @@
     <Content Include="Templates\img\banner-1.jpg" />
     <Content Include="Templates\img\banner-2.jpg" />
     <Content Include="Templates\img\banner-3.jpg" />
+    <Content Include="Templates\img\Hotel pic 2.jpg" />
+    <Content Include="Templates\img\Hotel Pic 3.jpg" />
+    <Content Include="Templates\img\Hotel Pic.jpg" />
+    <Content Include="Templates\img\Hotel Taj.jpg" />
     <Content Include="Templates\img\index-01.jpg" />
     <Content Include="Templates\img\index-02.jpg" />
     <Content Include="Templates\img\index-03.jpg" />
@@ -233,6 +236,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HotelBookingController.cs" />
+    <Compile Include="Controllers\LoggingController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -284,6 +288,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Logging\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VHaaSh.API.Client\VHaaSh.API.Client.csproj">

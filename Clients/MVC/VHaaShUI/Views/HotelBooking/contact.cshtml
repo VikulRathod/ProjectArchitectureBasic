@@ -43,10 +43,10 @@
                             <li><a href="tours.html">Our Tours</a></li>
                             <li><a href="contact.html" class="active">Contact</a></li>*@
 
-                            @Html.ActionLink("Home", "Home")
-                            @Html.ActionLink("About", "about")
-                            @Html.ActionLink("Our Hotels", "tours")
-                            @Html.ActionLink("Contacts", "contact", null, new { @class = "active" })
+                            @Html.ActionLink("Home", "Home",null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("About", "about",null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Our Hotels", "tours",null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Contacts", "contact", null, new { @class = "btn btn-primary active" })
                         </ul>
                     </nav>
                 </div>

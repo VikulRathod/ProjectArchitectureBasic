@@ -31,18 +31,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
-                    <a href="#" class="tm-site-name">Holiday</a>
+                    <a href="#" class="tm-site-name">Enjoy Your Holidays With Us</a>
                 </div>
                 <div class="col-lg-6 col-md-8 col-sm-9">
                     <div class="mobile-menu-icon">
                         <i class="fa fa-bars"></i>
                     </div>
                     <nav class="tm-nav">
+
                         <ul>
-                            @Html.ActionLink("Home", "Home", null, new { @class = "active" })
-                            @Html.ActionLink("About", "about")
-                            @Html.ActionLink("Our Hotels", "tours")
-                            @Html.ActionLink("Contacts", "contact")
+                            @Html.ActionLink("Home", "Home", null, new { @class = "btn btn-primary active" })
+                            @Html.ActionLink("About", "about", null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Our Hotels", "tours", null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("Contacts", "contact", null, new { @class = "btn btn-primary" })
+
+
+                            @Html.ActionLink("Special Offers", "offers", null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("LOGIN", "login", null, new { @class = "btn btn-primary" })
 
                             @*<li><a href="index.html" class="active">Home</a></li>
                                 <li><a href="about.html">About</a></li>
@@ -64,26 +69,26 @@
                     <div class="tm-banner-inner">
                         <h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
                         <p class="tm-banner-subtitle">For Your Holidays</p>
-                        <a href="#more" class="tm-banner-link">Learn More</a>
+                        <a href="#more" class="tm-banner-link">Know More About Us</a>
                     </div>
-                    <img src="~/Templates/img/about-1.jpg" />
+                    <img src="~/Templates/img/Hotel Pic.jpg" />
                     <img src="~/Templates/img/banner-1.jpg" alt="Image" />
                 </li>
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Lorem <span class="tm-yellow-text">Ipsum</span> Dolor</h1>
-                        <p class="tm-banner-subtitle">Wonderful Destinations</p>
-                        <a href="#more" class="tm-banner-link">Learn More</a>
+                        <h1 class="tm-banner-title">ENJOY <span class="tm-black-bg">YOUR</span> HOLIDAY</h1>
+                        <p class="tm-banner-subtitle">With Wonderful Destinations</p>
+                        <a href="#more" class="tm-banner-link">Know More About Us</a>
                     </div>
-                    <img src="~/Templates/img/banner-2.jpg" alt="Image" />
+                    <img src="~/Templates/img/Hotel Pic 3.jpg" alt="Image" />
                 </li>
                 <li>
                     <div class="tm-banner-inner">
-                        <h1 class="tm-banner-title">Proin <span class="tm-yellow-text">Gravida</span> Nibhvell</h1>
-                        <p class="tm-banner-subtitle">Velit Auctor</p>
-                        <a href="#more" class="tm-banner-link">Learn More</a>
+                        <h1 class="tm-banner-title">To  <span class="tm-yellow-text">Travel</span> IS TO</h1>
+                        <p class="tm-banner-subtitle"> LIVE</p>
+                        <a href="#more" class="tm-banner-link">Know More About Us</a>
                     </div>
-                    <img src="~/Templates/img/banner-3.jpg" alt="Image" />
+                    <img src="~/Templates/img/Hotel pic 2.jpg" alt="Image" />
                 </li>
             </ul>
         </div>
@@ -112,11 +117,17 @@
                                     <div class="tm-form-inner">
                                         <div class="form-group">
                                             <select class="form-control">
-                                                <option value="">-- Select Hotel -- </option>
-                                                <option value="shangrila">Shangri-La</option>
-                                                <option value="chatrium">Chatrium</option>
-                                                <option value="fourseasons">Four Seasons</option>
-                                                <option value="hilton">Hilton</option>
+                                                <option value="country">-- Select Country -- </option>
+                                                <option value="shangrila">INDIA</option>
+                                                <option value="chatrium">UNITED STATES</option>
+                                                <option value="fourseasons">PARIS</option>
+                                                <option value="hilton">FRANCE</option>
+                                            </select>
+                                            <select class="form-control">
+                                                <option value="city">-- Select city -- </option>
+                                            </select>
+                                            <select class="form-control">
+                                                <option value="Hotel">-- Select Hotel -- </option>
                                             </select>
                                         </div>
                                         <div class="form-group">
@@ -202,11 +213,11 @@
 
             <div class="col-lg-4 col-md-4 col-sm-6">
                 <div class="tm-home-box-1 tm-home-box-1-2 tm-home-box-1-center">
-                    <img src="~/Templates/img/index-01.jpg" alt="image" class="img-responsive">
+                    <img src="~/Templates/img/Hotel Taj.jpg" alt="image" class="img-responsive">
                     <a href="#">
                         <div class="tm-green-gradient-bg tm-city-price-container">
-                            <span>New York</span>
-                            <span>$6,600</span>
+                            <span>MUMBAI</span>
+                            <span>₹6,600</span>
                         </div>
                     </a>
                 </div>
@@ -469,6 +480,8 @@
 
 
         });
+
+
     </script>
 </body>
 </html>
