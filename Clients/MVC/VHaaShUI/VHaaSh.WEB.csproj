@@ -192,6 +192,7 @@
     <Content Include="FreeTemplate\img\gallery-4.jpg" />
     <Content Include="FreeTemplate\img\gallery-5.jpg" />
     <Content Include="FreeTemplate\img\gallery-6.jpg" />
+    <Content Include="FreeTemplate\img\SHRADDHAPHOTO1.jpg" />
     <Content Include="FreeTemplate\img\team-1.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -202,6 +203,13 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="FreeTemplate\img\team-4.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FreeTemplate\img\team-dny1png.png" />
+    <Content Include="FreeTemplate\img\team-Dnyaneshwar.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FreeTemplate\img\team-rohan.jpeg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="FreeTemplate\img\testimonial-1.jpg" />

@@ -20,7 +20,7 @@
     {
         @Html.AntiForgeryToken()
         @Html.ValidationSummary(true)
-    
+
         <fieldset>
             <legend>UserInfo</legend>
 
@@ -76,10 +76,12 @@
                 <input type="submit" value="Register" />
             </p>
         </fieldset>
-        
+
         <div>
             @Html.ActionLink("Already registered?", "Login")
         </div>
+
+
     }
 </body>
 </html>
