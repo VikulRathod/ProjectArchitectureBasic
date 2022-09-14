@@ -1,0 +1,303 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_AKLayout.cshtml";
+    ViewBag.Title = "Ragister";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>AK - Insurance : Contact</title>
+    <link rel="shortcut icon" href="~/TemplateFiles/images/favicon.png" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="~/TemplateFiles/css/icons.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 8]><!-->
+    <link rel="stylesheet" href="ie7/ie7.css">
+    <!--<![endif]-->
+    <link href="~/TemplateFiles/css/style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+    <style>
+       /* html {
+            background-color: #0094ff;
+        }*/
+
+        /*body {
+            font-family: "Poppins",sans-serif;
+            height: 100vh;
+            background-color: #56baed;
+        }*/
+        a {
+            color:#92badd;
+            display:inline-block;
+            text-decoration:none;
+            font-weight:400;
+        }
+        h2{
+            text-align:center;
+            font-size:25px;
+            text-transform:uppercase;
+            display:inline-block;
+            margin:40px 8px 10px 8px;
+            color:#cccccc;
+        }
+        .wrapper {
+            display:flex;
+            align-items:center;
+            flex-direction:column;
+            justify-content:center;
+            width:100%;
+            min-height:100%;
+            padding:20px;
+            margin:150px;
+        }
+
+        #formContent {
+            -webkit-border-radius: 10px 10px 10px 10px;
+            /*border-redius:10px 10px 10px 10px;*/
+            background: #fff;
+            padding: 30px;
+            width: 90%;
+            max-width: 450px;
+            position: relative;
+            padding: 0px;
+            -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);  /*to giv box shape to that login window*/
+            box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+            text-align:center;
+        }
+
+        #formfooter {
+            color:#39ace7;
+            background-color:#f6f6f6;
+            border-top:1px solid #dce8f1;
+            padding:25px;
+            text-align:center;
+            /*-wevkit-border-redius:0 0 10px 10px;*/
+            /*border-redius:0 0 10px 10px;*/
+        }
+
+        h2.active{
+            color:#0d0d0d;
+            border-bottom:2px solid #0094ff;
+        }
+
+        input[type=button], input[type=submit], input[type=reset] {
+            background-color: #56baed;
+            border: none;
+            color: white;
+            padding: 15px 80px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            -webkit-box-shadow: 0 10px 30px 0 rgba(95,786,233,0.4); /*to giv box shape to that sign in button*/
+            box-shadow: 0 10px 30px 0 rgba(95,786,233,0.4);
+            -webkit-border-radius: 5px 5px 5px 5px; /*to shape rounded to that submit button*/
+            margin: 5px 20px 40px 20px;
+            -webkit-transition: all 0.3s ease-in-out; /*transmition efect when we click and unclik item*/
+            -moz-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+            background-color:#39ace7;
+        }
+
+            input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
+                -moz-transform: scale(0.95);
+                -webkit-transform: scale(0.95);
+                -o-transform: scale(0.95);
+                -ms-transform: scale(0.95);
+                transform: scale(0.95);
+            }
+
+        input[type=text] {
+            background-color: #f6f6f6;
+            border: none;
+            color: #0d0d0d;
+            padding: 15px 32px;
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            width: 70%;
+            border: 2px solid #f6f6f6;
+            -webkit-transition: all 0.5s ease-in-out; /*transmition efect when we click and unclik item*/
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            -webkit-border-radius: 5px 5px 5px 5px;
+            border-radius: 5px 5px 5px 5px;
+        }
+
+            input[type=text]:focus {
+                background-color: #fff;
+                border-bottom: 2px solid #5fbae9;
+            }
+            input[type=text]::placeholder {
+                color: #cccccc;
+            }
+
+    input[type=password] {
+        background-color: #f6f6f6;
+        border: none;
+        color: #0d0d0d;
+        padding: 15px 32px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px;
+        width: 70%;
+        border: 2px solid #f6f6f6;
+        -webkit-transition: all 0.5s ease-in-out; /*transmition efect when we click and unclik item*/
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border-radius: 5px 5px 5px 5px;
+    }
+
+        input[type=password]:focus {
+            background-color: #fff;
+            border-bottom: 2px solid #5fbae9;
+        }
+
+        input[type=password]::placeholder {
+            color: #cccccc;
+        }
+
+        /* ANIMATIONS */
+
+        /* Simple CSS3 Fade-in-down Animation */
+        .fadeInDown {
+            -webkit-animation-name: fadeindown;
+            animation-name: fadeInDown;
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
+
+        @*@-webkit-keyframes fadeindown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }*@
+
+        @*@keyframes fadeindown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+            }
+
+            100% {
+                opacity: 1;
+                -webkit-transform: none;
+                transform: none;
+            }
+        }*@
+
+        .underlinehover:after {
+            display: block;
+            left: 0;
+            bottom: -10px;
+            width: 0;
+            height: 2px;
+            background-color: #56baed;
+            content: "";
+            transition: width 0.2s;
+        }
+
+        .underlineHover:hover {
+            color: #0d0d0d;
+        }
+
+            .underlinehover:hover:after {
+                width: 100%;
+            }
+
+
+
+        /* OTHERS */
+
+        *:focus {
+            outline: none;
+        }
+
+        #icon {
+            width: 60%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper fadeInDown, container" style="position:center">
+        <div id="formContent">
+            <h2 class="active">Sign Up</h2>
+
+            <div class="fadeIn first">
+                <img src="~/TemplateFiles/images/ALogo.png" style="width:100px;height:100px;" id="icon" alt="User Icom" />
+
+            </div>
+
+            <form>
+                <input type="text" id="Login" class="fedIn second" name="Email" placeholder="User Name" />
+                <br /><br />
+                <input type="text" id="Login" class="fedIn second" name="Email" placeholder="Email" />
+                <br /><br />
+                <input type="password" id="password" class="fadeIn third" name="Password" placeholder="Password" />
+                <br /><br />
+                <input type="submit" class="fadeIn fourth" value="Sign Up" />
+                <br />
+                @Html.ActionLink("Already have a account?", "Login")
+            </form>
+
+            <div id="formfooter">
+                <h4>Please register to connect with us!</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <script src="~/TemplateFiles/js/custom.js"></script>
+</body>
+</html>

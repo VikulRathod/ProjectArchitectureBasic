@@ -189,6 +189,7 @@
     <Content Include="TemplateFiles\images\agent2.jpg" />
     <Content Include="TemplateFiles\images\agent3.jpg" />
     <Content Include="TemplateFiles\images\agent4.jpg" />
+    <Content Include="TemplateFiles\images\ALogo.png" />
     <Content Include="TemplateFiles\images\footer-line.jpg" />
     <Content Include="TemplateFiles\images\icon1.png" />
     <Content Include="TemplateFiles\images\icon2.png" />
@@ -259,6 +260,9 @@
     <Content Include="TemplateFiles\less\header-footer.less" />
     <Content Include="TemplateFiles\less\prepros-6.config" />
     <Content Include="TemplateFiles\less\style.less" />
+    <Content Include="Views\Shared\_AKLayout.cshtml" />
+    <Content Include="Views\AKInsurance\Login.cshtml" />
+    <Content Include="Views\AKInsurance\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

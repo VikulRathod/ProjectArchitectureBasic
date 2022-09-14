@@ -1,6 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
+@{
+    Layout = "~/Views/Shared/_AKLayout.cshtml";
+
+    ViewBag.Title = "Home";
+   
+}
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,63 +34,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar-fixed-top">
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 address">
-                        <i class="ti-location-pin"></i> Varad Complex, Narhe, pune - 411041
-                    </div>
-                    <div class="col-sm-6 social">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        AK<span> Insurance</span>
-                    </a>
-                    <p>Call Us Now <b>+91 8390762229</b></p>
-                </div>
-                <div class="collapse navbar-collapse navbar-main-collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            @*<a href="index.html">Home</a>*@
-                            @Html.ActionLink("Home", "Index")
-                        </li>
-                        <li>
-                            @*<a href="blog.html">Blog</a>*@
-                            @Html.ActionLink("Products", "BlogPage")
-                        </li>
-                        <li>
-                            @*<a href="blog-details.html">Blog Details</a>*@
-                            @Html.ActionLink("Reviews", "BlogDetails")
-                        </li>
-                        <li>
-                            @*<a href="contact-us.html">Contact</a>*@
-                            @Html.ActionLink("Contact", "ContactUs")
-                        </li>
-                        @*<li>
-                                <a href="#" class="btn-default">Buy Pro Version</a>
-                            </li>*@
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+   
     <div class="clear"></div>
     <div id="page-content">
         <section class="flexslider">
@@ -93,7 +44,7 @@
                     <div class="slide-info">
                         <div class="slide-con">
                             <b>Healthcare</b>
-                            <h3>Health Insurance</h3>
+                            <h3>Individual Health Insurance</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
                             <a href="#" class="ti-arrow-right"></a>
                         </div>
@@ -104,7 +55,7 @@
                     <div class="slide-info">
                         <div class="slide-con">
                             <b>Lifecare</b>
-                            <h3>Life Insurance</h3>
+                            <h3>Family Health Plan</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
                             <a href="#" class="ti-arrow-right"></a>
                         </div>
@@ -115,7 +66,18 @@
                     <div class="slide-info">
                         <div class="slide-con">
                             <b>Healthcare</b>
-                            <h3>Travel Insurance</h3>
+                            <h3>Critical Illness Health Plan</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
+                            <a href="#" class="ti-arrow-right"></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="~/TemplateFiles/images/slider-img1.jpg" />
+                    <div class="slide-info">
+                        <div class="slide-con">
+                            <b>Lifecare</b>
+                            <h3>Extra Care Plus Plan</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit fringilla ligula, nec congue leo pharetra in.</p>
                             <a href="#" class="ti-arrow-right"></a>
                         </div>
@@ -127,23 +89,25 @@
             <div class="row">
                 <section class="col-sm-7 col-md-8 col-lg-8">
                     <div class="intro">
-                        <h2>Welcome to AK Insurance</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent orci nisi, porta sed diam id, venenatis dignissim urna. Duis sit amet eros a sem viverra mollis nec eu sem. Quisque rutporta sed diam id, venenatis dignissim urna. Duis sit amet eros a sem viver uisque rurum euismod fermentum.</p>
+                        <h2>Always Welcome to you..</h2>
+                        <p>
+                            With the rise in health-related issues, there is an extreme increase in the treatment costs too. Moreover, there is an increase in the demand for Health Insurance Plans. Therefore, several types of Health Insurance Policies in the market help you save that extra burden on your pocket.
+                        </p>
                         <ul class="row">
                             <li class="col-sm-4">
                                 <i class="fa fa-life-ring"></i>
                                 <h3>27x7 Support</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                <p>Alway's ready for you.</p>
                             </li>
                             <li class="col-sm-4">
                                 <i class="ti-marker-alt"></i>
                                 <h3>Easy Claim system</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                <p>World's Best Claim system.</p>
                             </li>
                             <li class="col-sm-4">
                                 <i class="ti-email"></i>
                                 <h3>Get Started with us</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                <p>Drop a mail For us!</p>
                             </li>
                         </ul>
                     </div>
@@ -492,83 +456,8 @@
         </section>
     </div>
     <div class="clear"></div>
-    <footer>
-        <div class="container">
-            <div class="row contact-sec">
-                <div class="col-md-5 col-lg-5">
-                    <h2>AK<span> Insurance</span></h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>
-                                Varad Complex , Nr Canara Corner - Narhe Pune
-                                <br />Zip - 411041
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-phone"></i> +91 123 456 7890</a></li>
-                                <li><a href="#"><i class="ti-email"></i> info@bootstrapmart.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#" class="btn-default">Contact Us</a>
-                </div>
-                <div class="col-md-5 col-lg-5 col-md-offset-2 col-lg-offset-2">
-                    <h2>Agent<span> Detail</span></h2>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <p>
-                                Varad Complex , Nr Canara Corner - Narhe Pune
-                                <br />Zip - 411041
-                            </p>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-phone"></i> +91 8390762229</a></li>
-                                <li><a href="#"><i class="ti-email"></i> info@akinsurance.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <a href="#" class="btn-default">Contact Agent</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-8 col-lg-8">
-                    <ul class="footer-nav">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#">Compnies represented</a></li>
-                        <li><a href="contact-us.html">Contact us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-lg-2 col-md-offset-2 col-lg-offset-2">
-                    <ul class="footer-social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        Copyright &copy; AK Insurance Pvt. Ltd.
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6 text-right">
-                        <a href="#">Terms & Conditions</a>
-                        <a href="#">Policy</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+   
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
