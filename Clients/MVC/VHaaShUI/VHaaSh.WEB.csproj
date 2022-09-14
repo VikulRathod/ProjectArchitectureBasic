@@ -177,6 +177,52 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Templates\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="Templates\css\bootstrap.min.css" />
+    <Content Include="Templates\css\flexslider.css" />
+    <Content Include="Templates\css\font-awesome.min.css" />
+    <Content Include="Templates\css\fonts\flexslider-icon.svg" />
+    <Content Include="Templates\css\templatemo-style.css" />
+    <Content Include="Templates\fonts\fontawesome-webfont.svg" />
+    <Content Include="Templates\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Templates\img\about-1.jpg" />
+    <Content Include="Templates\img\about-2.jpg" />
+    <Content Include="Templates\img\about-3.jpg" />
+    <Content Include="Templates\img\about-4.jpg" />
+    <Content Include="Templates\img\about-5.jpg" />
+    <Content Include="Templates\img\about-6.jpg" />
+    <Content Include="Templates\img\about-7.jpg" />
+    <Content Include="Templates\img\banner-1.jpg" />
+    <Content Include="Templates\img\banner-2.jpg" />
+    <Content Include="Templates\img\banner-3.jpg" />
+    <Content Include="Templates\img\index-01.jpg" />
+    <Content Include="Templates\img\index-02.jpg" />
+    <Content Include="Templates\img\index-03.jpg" />
+    <Content Include="Templates\img\index-04.jpg" />
+    <Content Include="Templates\img\index-05.jpg" />
+    <Content Include="Templates\img\index-06.jpg" />
+    <Content Include="Templates\img\index-07.jpg" />
+    <Content Include="Templates\img\index-08.jpg" />
+    <Content Include="Templates\img\index-09.jpg" />
+    <Content Include="Templates\img\index-10.jpg" />
+    <Content Include="Templates\img\rating.png" />
+    <Content Include="Templates\img\tours-01.jpg" />
+    <Content Include="Templates\img\tours-02.jpg" />
+    <Content Include="Templates\img\tours-03.jpg" />
+    <Content Include="Templates\img\tours-04.jpg" />
+    <Content Include="Templates\img\tours-05.jpg" />
+    <Content Include="Templates\img\tours-06.jpg" />
+    <Content Include="Templates\img\tours-07.jpg" />
+    <Content Include="Templates\img\tours-08.jpg" />
+    <Content Include="Templates\img\tours-09.jpg" />
+    <Content Include="Templates\img\tours-10.jpg" />
+    <Content Include="Templates\img\world-map.png" />
+    <Content Include="Templates\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="Templates\js\bootstrap.min.js" />
+    <Content Include="Templates\js\jquery-1.11.2.min.js" />
+    <Content Include="Templates\js\jquery.flexslider-min.js" />
+    <Content Include="Templates\js\moment.js" />
+    <Content Include="Templates\js\templatemo-script.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -186,6 +232,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HotelBookingController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -208,6 +255,22 @@
     <Content Include="Views\Payments\Index.cshtml" />
     <Content Include="Views\Payments\Success.cshtml" />
     <Content Include="Views\Payments\Failed.cshtml" />
+    <Content Include="Views\HotelBooking\Home.cshtml" />
+    <Content Include="Views\HotelBooking\about.cshtml" />
+    <Content Include="Views\HotelBooking\tours.cshtml" />
+    <Content Include="Views\HotelBooking\contact.cshtml" />
+    <Content Include="Templates\css\fonts\flexslider-icon.eot" />
+    <Content Include="Templates\css\fonts\flexslider-icon.ttf" />
+    <Content Include="Templates\css\fonts\flexslider-icon.woff" />
+    <Content Include="Templates\fonts\fontawesome-webfont.eot" />
+    <Content Include="Templates\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Templates\fonts\fontawesome-webfont.woff" />
+    <Content Include="Templates\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Templates\fonts\FontAwesome.otf" />
+    <Content Include="Templates\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Templates\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Templates\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Templates\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
