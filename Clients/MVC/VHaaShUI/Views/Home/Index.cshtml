@@ -16,7 +16,7 @@
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="FreeTemplate/img/favicon.ico" rel="icon">
+    <link href="~/FreeTemplate/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,14 +26,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="~/FreeTemplate/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/FreeTemplate/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/FreeTemplate/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <link href="~/FreeTemplate/css/style.css" rel="stylesheet">
     <link href="~/FreeTemplate/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/FreeTemplate/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/FreeTemplate/css/style.css" rel="stylesheet" />
@@ -54,21 +54,23 @@
     <script src="~/FreeTemplate/lib/tempusdominus/js/moment.min.js"></script>
     <script src="~/FreeTemplate/lib/waypoints/waypoints.min.js"></script>
 
+    <script src="~/FreeTemplate/js/main.js"></script>
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="~/FreeTemplate/lib/easing/easing.min.js"></script>
+    <script src="~/FreeTemplate/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/FreeTemplate/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/FreeTemplate/lib/tempusdominus/js/moment.min.js"></script>
+    <script src="~/FreeTemplate/lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="~/FreeTemplate/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="../../Jquery/prettify.js"></script>
     <link href="../Jquery/jquery.multiselect.css" rel="stylesheet" />
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="~/FreeTemplate/js/main.js"></script>
 
 
     <title></title>
@@ -118,30 +120,31 @@
         <!-- Navbar Start -->
         <div class="container-fluid position-relative nav-bar p-0">
             <div class="position-relative px-lg-5" style="z-index: 9;">
-                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+                <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-7">
                     <a href="" class="navbar-brand">
                         <h1 class="text-uppercase text-primary mb-1">Vehicle Insurance System</h1>
                     </a>
                     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="collapse navbar-collapse justify-content-between px-2" id="navbarCollapse">
                         <div class="navbar-nav ml-auto py-0">
                             @*<a href="index.html" class="nav-item nav-link active">Home</a>*@
-                            @Html.ActionLink("Home", "Index", null, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("Home", "Index", null, new { @class = "nav-item nav-link active" })
                             @*<a href="about.html" class="nav-item nav-link">About</a>*@
                             @Html.ActionLink("About", "About", null, new { @class = "nav-item nav-link" })
                             @Html.ActionLink("Service", "Service", null, new { @class = "nav-item nav-link" })
+
                             @*<a href="service.html" class="nav-item nav-link">Service</a>*@
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Vehicle</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="car.html" class="dropdown-item">Two Wheeelers/Bikes</a>
-                                    <a href="detail.html" class="dropdown-item">Four Wheelers</a>
-                                    <a href="booking.html" class="dropdown-item">Commercial Vehicles</a>
-                                    @*@Html.ActionLink("Bike", "Bike", null, new { @class = "dropdown-item" })
-                                    @Html.ActionLink("FourWheeler", "FourWheeler", null, new { @class = "dropdown-item" })
-                                    @Html.ActionLink("Commercial", "Commercial", null, new { @class = "dropdown-item" })*@
+                                    @*<a href="car.html" class="dropdown-item">Two Wheeelers/Bikes</a>
+                                        <a href="detail.html" class="dropdown-item">Four Wheelers</a>
+                                        <a href="booking.html" class="dropdown-item">Commercial Vehicles</a>*@
+                                    @Html.ActionLink("Bike", "Bike", null, new { @class ="dropdown-item" })
+                                    @Html.ActionLink("FourWheeler", "FourWheeler", null, new { @class ="dropdown-item" })
+                                    @Html.ActionLink("Commercial", "Commercial", null, new { @class ="dropdown-item" })
 
                                 </div>
                             </div>
@@ -149,13 +152,16 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                                 <div class="dropdown-menu rounded-0 m-0">
                                     <a href="team.html" class="dropdown-item">The Team</a>
-                                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                                     @*@Html.ActionLink("The Team", "TheTeam", null, new { @class = "dropdown-item" })
-                                    @Html.ActionLink("Testimonial", "Testimonial", null, new { @class = "dropdown-item" })*@
+                                        @Html.ActionLink("Testimonial", "Testimonial", null, new { @class = "dropdown-item" })*@
                                 </div>
                             </div>
                             @*<a href="contact.html" class="nav-item nav-link">Contact</a>*@
                             @Html.ActionLink("Contact", "Contact", null, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("Login", "Login", "Account", null, new { @class = "nav-item nav-link" })
+                            @Html.ActionLink("Signup", "Register", "Account", null, new { @class = "nav-item nav-link" })
+
                         </div>
                     </div>
                 </nav>
@@ -299,7 +305,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">01</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Vehicle Insurance System</h4>
+                            <h4 class="text-uppercase mb-3">Bike Insurance </h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -311,7 +317,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Car Financing</h4>
+                            <h4 class="text-uppercase mb-3">3 Wheeler Insurance</h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -323,7 +329,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">03</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Car Inspection</h4>
+                            <h4 class="text-uppercase mb-3"> 4 Wheeler Insurance</h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -335,7 +341,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">04</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Auto Repairing</h4>
+                            <h4 class="text-uppercase mb-3">Commercial Vehicle Insurance</h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -347,7 +353,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">05</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Auto Painting</h4>
+                            <h4 class="text-uppercase mb-3">Transport Vehicle Insurance</h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -359,7 +365,7 @@
                                 </div>
                                 <h1 class="display-2 text-white mt-n2 m-0">06</h1>
                             </div>
-                            <h4 class="text-uppercase mb-3">Auto Cleaning</h4>
+                            <h4 class="text-uppercase mb-3">Others</h4>
                             <p class="m-0">Kasd dolor no lorem nonumy sit labore tempor at justo rebum rebum stet, justo elitr dolor amet sit sea sed</p>
                         </div>
                     </div>
@@ -522,7 +528,9 @@
             <div class="container py-5">
                 <h1 class="display-1 text-primary text-center">04</h1>
                 <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
-                <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+
+                <div class="owl-carousel team-carousel position-relative" style="padding:30px;">
+
                     <div class="team-item">
                         <img class="img-fluid w-100" src="~/FreeTemplate/img/team-1.jpeg" alt="DS">
                         <div class="position-relative py-4">
@@ -536,9 +544,9 @@
                         </div>
                     </div>
                     <div class="team-item">
-                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-2.jpg" alt="">
+                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-2.jpg" alt="SG">
                         <div class="position-relative py-4">
-                            <h4 class="text-uppercase">Shradha Gaikwad</h4>
+                            <h4 class="text-uppercase">Shraddha Gaikwad</h4>
                             <p class="m-0">Software Developer</p>
                             <div class="team-social position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
                                 <a class="btn btn-lg btn-primary btn-lg-square mx-1" href="#"><i class="fab fa-twitter"></i></a>
@@ -548,7 +556,7 @@
                         </div>
                     </div>
                     <div class="team-item">
-                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-3.jpg" alt="">
+                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-3.jpg" alt="RG">
                         <div class="position-relative py-4">
                             <h4 class="text-uppercase">Rohan Gavandhare</h4>
                             <p class="m-0">Software Developer</p>
@@ -560,7 +568,7 @@
                         </div>
                     </div>
                     <div class="team-item">
-                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-4.jpg" alt="">
+                        <img class="img-fluid w-100" src="~/FreeTemplate/img/team-4.jpg" alt="SA">
                         <div class="position-relative py-4">
                             <h4 class="text-uppercase">Sachin Ambalwad</h4>
                             <p class="m-0">Software Trinee</p>
@@ -581,7 +589,7 @@
                 <div class="row mx-0">
                     <div class="col-lg-6 px-0">
                         <div class="px-5 bg-secondary d-flex align-items-center justify-content-between" style="height: 350px;">
-                            <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="FreeTemplate/img/banner-left.png" alt="">
+                            <img class="img-fluid flex-shrink-0 ml-n5 w-50 mr-4" src="~/FreeTemplate/img/banner-left.png" alt="">
                             <div class="text-right">
                                 <h3 class="text-uppercase text-light mb-3">Want to be driver?</h3>
                                 <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
@@ -596,7 +604,7 @@
                                 <p class="mb-4">Lorem justo sit sit ipsum eos lorem kasd, kasd labore</p>
                                 <a class="btn btn-primary py-2 px-4" href="">Start Now</a>
                             </div>
-                            <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="FreeTemplate/img/banner-right.png" alt="">
+                            <img class="img-fluid flex-shrink-0 mr-n5 w-50 ml-4" src="~/FreeTemplate/img/banner-right.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -611,7 +619,7 @@
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                            <img class="FreeTemplate/img-fluid ml-n4" src="FreeTemplate/img/testimonial-1.jpg" alt="">
+                            <img class="FreeTemplate/img-fluid ml-n4" src="~/FreeTemplate/img/testimonial-1.jpg" alt="">
                             <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                         </div>
                         <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -620,7 +628,7 @@
                     </div>
                     <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                            <img class="FreeTemplate/img-fluid ml-n4" src="FreeTemplate/img/testimonial-2.jpg" alt="">
+                            <img class="FreeTemplate/img-fluid ml-n4" src="~/FreeTemplate/img/testimonial-2.jpg" alt="">
                             <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                         </div>
                         <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -629,7 +637,7 @@
                     </div>
                     <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                            <img class="img-fluid ml-n4" src="FreeTemplate/img/testimonial-3.jpg" alt="">
+                            <img class="img-fluid ml-n4" src="~/FreeTemplate/img/testimonial-3.jpg" alt="">
                             <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                         </div>
                         <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -638,7 +646,8 @@
                     </div>
                     <div class="testimonial-item d-flex flex-column justify-content-center px-4">
                         <div class="d-flex align-items-center justify-content-between mb-3">
-                            <img class="img-fluid ml-n4" src="FreeTemplate/img/testimonial-4.jpg" alt="">
+                            <img src="~/FreeTemplate/img/team-4.jpg" />
+                            <img class="img-fluid ml-n4" src="~/FreeTemplate/img/testimonial-4.jpg" alt="">
                             <h1 class="display-2 text-white m-0 fa fa-quote-right"></h1>
                         </div>
                         <h4 class="text-uppercase mb-2">Client Name</h4>
@@ -719,28 +728,28 @@
             <div class="container py-5">
                 <div class="owl-carousel vendor-carousel">
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-1.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-1.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-2.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-2.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-3.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-3.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-4.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-4.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-5.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-5.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-6.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-6.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-7.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-7.png" alt="">
                     </div>
                     <div class="bg-light p-4">
-                        <img src="FreeTemplate/img/vendor-8.png" alt="">
+                        <img src="~/FreeTemplate/img/vendor-8.png" alt="">
                     </div>
                 </div>
             </div>
@@ -777,22 +786,22 @@
                     <h4 class="text-uppercase text-light mb-4">Car Gallery</h4>
                     <div class="row mx-n1">
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-1.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-1.jpg" alt=""></a>
                         </div>
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-2.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-2.jpg" alt=""></a>
                         </div>
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-3.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-3.jpg" alt=""></a>
                         </div>
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-4.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-4.jpg" alt=""></a>
                         </div>
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-5.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-5.jpg" alt=""></a>
                         </div>
                         <div class="col-4 px-1 mb-2">
-                            <a href=""><img class="w-100" src="FreeTemplate/img/gallery-6.jpg" alt=""></a>
+                            <a href=""><img class="w-100" src="~/FreeTemplate/img/gallery-6.jpg" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -823,15 +832,15 @@
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/waypoints/waypoints.min.js"></script>
-        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="lib/tempusdominus/js/moment.min.js"></script>
-        <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-        <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+        <script src="~/FreeTemplate/lib/easing/easing.min.js"></script>
+        <script src="~/FreeTemplate/lib/waypoints/waypoints.min.js"></script>
+        <script src="~/FreeTemplate/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="~/FreeTemplate/lib/tempusdominus/js/moment.min.js"></script>
+        <script src="~/FreeTemplate/lib/tempusdominus/js/moment-timezone.min.js"></script>
+        <script src="~/FreeTemplate/lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+        <script src="~/FreeTemplate/js/main.js"></script>
     </div>
 
 </body>

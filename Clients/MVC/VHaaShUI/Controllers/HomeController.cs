@@ -34,5 +34,10 @@ namespace VHaaSh.WEB.Controllers
         {
             return View();
         }
+
+        public ActionResult Vehicles()
+        {
+            return View();
+        }
     }
 }
