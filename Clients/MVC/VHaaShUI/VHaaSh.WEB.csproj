@@ -251,6 +251,7 @@
     <Content Include="Views\TransportHome\Service.cshtml" />
     <Content Include="Views\TransportHome\Shop.cshtml" />
     <Content Include="Views\TransportHome\Register.cshtml" />
+    <Content Include="Views\TransportHome\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
