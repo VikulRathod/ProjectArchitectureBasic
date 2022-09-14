@@ -8,10 +8,10 @@ namespace VHaaSh.WEB.Controllers
 {
     public class LoggingController : Controller
     {
-        // GET: Logging
+        // GET: Logging 
         public ActionResult Index()
         {
-            //Logging controller added
+            //Logging controller added Successfully
             return View();
         }
     }
