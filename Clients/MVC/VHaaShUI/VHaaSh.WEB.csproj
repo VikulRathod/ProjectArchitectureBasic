@@ -2253,7 +2253,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Areas\Staff\Views\web.config" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.eot" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.ttf" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.woff" />
@@ -2725,12 +2724,11 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
-    <Compile Include="Areas\Staff\StaffAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GymController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NutritionistsController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -2772,6 +2770,11 @@
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\_ViewStart.cshtml" />
+    <Content Include="Views\Nutritionists\Create.cshtml" />
+    <Content Include="Views\Nutritionists\Delete.cshtml" />
+    <Content Include="Views\Nutritionists\Details.cshtml" />
+    <Content Include="Views\Nutritionists\Edit.cshtml" />
+    <Content Include="Views\Nutritionists\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -2784,9 +2787,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Staff\Controllers\" />
-    <Folder Include="Areas\Staff\Data\" />
-    <Folder Include="Areas\Staff\Views\Shared\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Gym\" />
   </ItemGroup>
