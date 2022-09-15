@@ -16,7 +16,7 @@ namespace VHaaSh.WEB
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Appointments", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Owners", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
