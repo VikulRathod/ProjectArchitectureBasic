@@ -2732,6 +2732,7 @@
     <Compile Include="Controllers\NutritionistsController.cs" />
     <Compile Include="Controllers\OwnersController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
+    <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2792,11 +2793,19 @@
     <Content Include="Views\Members\Details.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
     <Content Include="Views\Members\Index.cshtml" />
+<<<<<<< HEAD
+    <Content Include="Views\Staff\Create.cshtml" />
+    <Content Include="Views\Staff\Delete.cshtml" />
+    <Content Include="Views\Staff\Details.cshtml" />
+    <Content Include="Views\Staff\Edit.cshtml" />
+    <Content Include="Views\Staff\Index.cshtml" />
+=======
     <Content Include="Views\CustomizedPlans\Create.cshtml" />
     <Content Include="Views\CustomizedPlans\Delete.cshtml" />
     <Content Include="Views\CustomizedPlans\Details.cshtml" />
     <Content Include="Views\CustomizedPlans\Edit.cshtml" />
     <Content Include="Views\CustomizedPlans\Index.cshtml" />
+>>>>>>> 49ab2655e92de89a0ad769065c46855e8b9ac239
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
