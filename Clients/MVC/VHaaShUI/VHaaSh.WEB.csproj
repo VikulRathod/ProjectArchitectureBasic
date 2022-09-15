@@ -168,6 +168,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Areas\Staff\Views\web.config" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -187,6 +188,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
+    <Compile Include="Areas\Staff\StaffAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GymController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -212,6 +214,13 @@
     <Content Include="Views\Payments\Index.cshtml" />
     <Content Include="Views\Payments\Success.cshtml" />
     <Content Include="Views\Payments\Failed.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\BloodDetails\Create.cshtml" />
+    <Content Include="Views\BloodDetails\Delete.cshtml" />
+    <Content Include="Views\BloodDetails\Details.cshtml" />
+    <Content Include="Views\BloodDetails\Edit.cshtml" />
+    <Content Include="Views\BloodDetails\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -224,6 +233,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Staff\Controllers\" />
+    <Folder Include="Areas\Staff\Data\" />
+    <Folder Include="Areas\Staff\Views\Shared\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Gym\" />
   </ItemGroup>
