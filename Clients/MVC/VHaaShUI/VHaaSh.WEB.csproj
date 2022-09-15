@@ -2726,7 +2726,6 @@
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\CustomizedPlansController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\GymController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
@@ -2811,7 +2810,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Gym\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VHaaSh.API.Client\VHaaSh.API.Client.csproj">

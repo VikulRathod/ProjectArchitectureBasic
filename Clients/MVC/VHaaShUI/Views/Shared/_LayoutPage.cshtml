@@ -18,7 +18,10 @@
     <link href="~/NewFreeTemplate/lib/flaticon/font/flaticon.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="~/NewFreeTemplate/css/style.min.css" rel="stylesheet">  
+    <link href="~/NewFreeTemplate/css/style.min.css" rel="stylesheet">
+    
+
+
 </head>
 <body class="bg-white">
     <!-- Navbar Start -->
@@ -31,43 +34,25 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                <div class="navbar-nav ml-auto p-4 bg-secondary" >
-                    @*<a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About Us</a>
-                        <a href="feature.html" class="nav-item nav-link">Our Features</a>
-                         <a href="class.html" class="nav-item nav-link">Classes</a>*@
-
-
+                <div class="navbar-nav ml-auto p-4 bg-secondary">
                     @Html.ActionLink("Home", "Index", null, new { @class = "nav-item nav-link customLink" })
                     @Html.ActionLink("About", "About", null, new { @class = "nav-item nav-link customLink" })
                     @Html.ActionLink("Our Features", "feature", null, new { @class = "nav-item nav-link customLink" })
                     @Html.ActionLink("Classes", "Class", null, new { @class = "nav-item nav-link customLink" })
 
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        @*@Html.ActionLink("Pages", "Blog", null, new { @class = "nav-link dropdown-toggle" })*@
-
-                        <div class="dropdown-menu text-capitalize">
-                            @*<a href="blog.html" class="dropdown-item">Blog Grid</a>*@
-                            @Html.ActionLink("Blog Grid", "blog", null, new { @class = "dropdown-item customLink" })
-
-                            @*<a href="single.html" class="dropdown-item">Blog Detail</a>*@
-                            @Html.ActionLink("Blog Detail", "single", null, new { @class = "dropdown-item customLink" })
-
-                        </div>
-                    </div>
-                    @*<a href="contact.html" class="nav-item nav-link">Contact</a>*@
-
                     @Html.ActionLink("Contact", "Contact", null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("Login", "", null, new { @class = "nav-item  nav-link text-White " })
+                    @Html.ActionLink("Register", "", null, new { @class = "nav-item nav-link text-White " })
                 </div>
             </div>
         </nav>
     </div>
     <!-- Navbar End -->
 
-    <div >
+    <div>
         @RenderBody()
     </div>
+
 
     <!-- Footer Start -->
     <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
@@ -145,12 +130,11 @@
             });
         });
 
-        //$('a').click(function () {
-        //    $(this).addClass('active');
-        //});
+        $('a').click(function () {
+            $(this).addClass('active');
+        });
 
 
-        
     </script>
 </body>
 </html>
