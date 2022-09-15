@@ -1,0 +1,85 @@
+﻿@model VHaaSh.API.Modals.Database_Models.TblCustomizedPlan
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+
+
+
+<div>
+    <h4>TblCustomizedPlan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NutritionPlanCharge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NutritionPlanCharge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomizedNutritionPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomizedNutritionPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingPlanCharge)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingPlanCharge)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomizedTrainingPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomizedTrainingPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblMember.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblMember.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblStaff.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblStaff.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblSupplement.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblSupplement.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblStaff1.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblStaff1.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<VHaaSh.API.Modals.Database_Models.TblCustomizedPlan>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NutritionPlanCharge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomizedNutritionPlan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrainingPlanCharge)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustomizedTrainingPlan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TblMember.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TblStaff.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TblSupplement.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TblStaff1.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NutritionPlanCharge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomizedNutritionPlan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrainingPlanCharge)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomizedTrainingPlan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TblMember.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TblStaff.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TblSupplement.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TblStaff1.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
