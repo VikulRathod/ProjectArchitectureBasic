@@ -2727,6 +2727,7 @@
     <Compile Include="Controllers\GymController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
     <Compile Include="Controllers\NutritionistsController.cs" />
     <Compile Include="Controllers\OwnersController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
@@ -2785,6 +2786,11 @@
     <Content Include="Views\Owners\Details.cshtml" />
     <Content Include="Views\Owners\Edit.cshtml" />
     <Content Include="Views\Owners\Index.cshtml" />
+    <Content Include="Views\Members\Create.cshtml" />
+    <Content Include="Views\Members\Delete.cshtml" />
+    <Content Include="Views\Members\Details.cshtml" />
+    <Content Include="Views\Members\Edit.cshtml" />
+    <Content Include="Views\Members\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
