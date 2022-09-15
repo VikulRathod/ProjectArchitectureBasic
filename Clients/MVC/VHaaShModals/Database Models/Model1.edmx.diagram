@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0d23e4e9c8d54808a28d1fabd684880a" Name="Diagram1" ZoomLevel="60">
+        <EntityTypeShape EntityType="T8GymDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblAppointment" Width="1.5" PointX="2.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblBatch" Width="1.5" PointX="10.5" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblBloodDetail" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblCity" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblCorporateMembership" Width="1.5" PointX="3" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblCustomizedPlan" Width="1.5" PointX="13.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblEventDetail" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblGallery" Width="1.5" PointX="2.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblGender" Width="1.5" PointX="6" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblHolidayDetail" Width="1.5" PointX="8.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblLevel" Width="1.5" PointX="3" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblLog" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblMaintenance" Width="1.5" PointX="10.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblMember" Width="1.5" PointX="5.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblMembership" Width="1.5" PointX="3" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblNutritionist" Width="1.5" PointX="8.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblOfferDetail" Width="1.5" PointX="12.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblOwner" Width="1.5" PointX="8.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblPaymentDetail" Width="1.5" PointX="10.5" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblPaymentMode" Width="1.5" PointX="8.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblRole" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblStaff" Width="1.5" PointX="8.25" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblState" Width="1.5" PointX="0.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblSupplement" Width="1.5" PointX="11.25" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblTrainer" Width="1.5" PointX="11.25" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblUserRole" Width="1.5" PointX="8.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblUser" Width="1.5" PointX="6" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="T8GymDBModel.TblUserType" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblBatch__Traini__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Batch__04E4BC85" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Blood__00200768" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblNutrit__Blood__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblOwners__Blood__36B12243" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblStaff__BloodI__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblTriane__Blood__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblCity__StateId__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__CityI__08B54D69" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblNutrit__CityI__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblOwners__CityI__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblStaff__CityId__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblTriane__CityI__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Corpo__06CD04F7" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblCustom__Membe__0C85DE4D" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblCustom__Nutri__0D7A0286" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblCustom__Suppl__0F624AF8" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblCustom__Train__0E6E26BF" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Gende__7F2BE32F" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblNutrit__Gende__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblStaff__Gender__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblTriane__Gende__44FF419A" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Recom__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Train__02084FDA" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblSupple__Level__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Membe__05D8E0BE" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Nutri__03F0984C" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__State__07C12930" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__Train__02FC7413" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblMember__UserI__09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblPaymen__Membe__151B244E" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblPaymen__Membe__160F4887" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblNutrit__State__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblNutrit__UserI__5070F446" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblOwners__State__37A5467C" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblOwners__UserI__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblPaymen__Payme__17036CC0" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblStaff__StateI__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblStaff__UserID__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblTriane__State__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblTriane__UserI__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblUserRo__UserI__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="T8GymDBModel.FK__TblUserRo__UserT__32E0915F" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
