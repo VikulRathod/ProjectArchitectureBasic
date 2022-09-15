@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="T8GymDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="GymDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -860,198 +860,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
-        <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-          <Parameter Name="version" Type="int" Mode="In" />
-          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
-        </Function>
-        <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-          <Parameter Name="version" Type="int" Mode="In" />
-          <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
-        </Function>
-        <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
-          <Parameter Name="owner_id" Type="int" Mode="In" />
-          <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
-        </Function>
-        <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="usp_AllPaymentsDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="usp_Create_EventDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Name" Type="varchar" Mode="In" />
-          <Parameter Name="Date" Type="date" Mode="In" />
-          <Parameter Name="Time" Type="time" Mode="In" />
-          <Parameter Name="Guest" Type="varchar" Mode="In" />
-          <Parameter Name="Description" Type="varchar(max)" Mode="In" />
-        </Function>
-        <Function Name="Usp_Delete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_Delete_EventDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-        </Function>
-        <Function Name="Usp_Delete_Maintenance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Id" Type="int" Mode="In" />
-          <Parameter Name="DeleteStatus" Type="bit" Mode="InOut" />
-          <Parameter Name="Result" Type="varchar" Mode="InOut" />
-        </Function>
-        <Function Name="usp_DeleteCustomizedPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_DeleteDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_GetAllCustomizedPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="Usp_Insert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Activity" Type="varchar" Mode="In" />
-          <Parameter Name="Duration" Type="float" Mode="In" />
-          <Parameter Name="WeekDay" Type="varchar" Mode="In" />
-          <Parameter Name="TrainierId" Type="int" Mode="In" />
-        </Function>
-        <Function Name="Usp_Insert_Maintenance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Machine" Type="varchar" Mode="In" />
-          <Parameter Name="IsRepair" Type="bit" Mode="In" />
-          <Parameter Name="IsMaintenance" Type="bit" Mode="In" />
-          <Parameter Name="IsReplace" Type="bit" Mode="In" />
-          <Parameter Name="Instruction" Type="varchar(max)" Mode="In" />
-          <Parameter Name="IsApproved" Type="bit" Mode="In" />
-          <Parameter Name="Estimate" Type="float" Mode="In" />
-          <Parameter Name="Bill" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="InsertStatus" Type="bit" Mode="InOut" />
-          <Parameter Name="Result" Type="varchar(max)" Mode="InOut" />
-        </Function>
-        <Function Name="usp_InsertCustomizedPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="MemberId" Type="int" Mode="In" />
-          <Parameter Name="NutritionPlanCharge" Type="float" Mode="In" />
-          <Parameter Name="CustomizedNutritionPlan" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="TrainingPlanCharge" Type="float" Mode="In" />
-          <Parameter Name="CustomizedTrainingPlan" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="NutritionistID" Type="int" Mode="In" />
-          <Parameter Name="TrainerID" Type="int" Mode="In" />
-          <Parameter Name="SupplimentId" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_InsertDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ReceiverName" Type="varchar" Mode="In" />
-          <Parameter Name="PaidAmount" Type="int" Mode="In" />
-          <Parameter Name="MemberID" Type="int" Mode="In" />
-          <Parameter Name="MembershipID" Type="int" Mode="In" />
-          <Parameter Name="PaymentMode" Type="int" Mode="In" />
-        </Function>
-        <Function Name="Usp_select" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="Usp_Select_Maintenance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Machine" Type="varchar" Mode="In" />
-          <Parameter Name="IsRepair" Type="bit" Mode="In" />
-          <Parameter Name="IsMaintenance" Type="bit" Mode="In" />
-          <Parameter Name="IsReplace" Type="bit" Mode="In" />
-          <Parameter Name="Instruction" Type="varchar(max)" Mode="In" />
-          <Parameter Name="IsApproved" Type="bit" Mode="In" />
-          <Parameter Name="Estimate" Type="float" Mode="In" />
-        </Function>
-        <Function Name="usp_SelectAll_EventDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="usp_SelectById_EventDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-        </Function>
-        <Function Name="Usp_SelectById_Maintenance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="id" Type="int" Mode="In" />
-          <Parameter Name="MachineName" Type="varchar" Mode="In" />
-        </Function>
-        <Function Name="usp_SelectDetailsById" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Id" Type="int" Mode="In" />
-        </Function>
-        <Function Name="Usp_Update" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-          <Parameter Name="Activity" Type="varchar" Mode="In" />
-          <Parameter Name="Duration" Type="float" Mode="In" />
-          <Parameter Name="WeekDay" Type="varchar" Mode="In" />
-          <Parameter Name="TrainierId" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_Update_EventDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-          <Parameter Name="Name" Type="varchar" Mode="In" />
-          <Parameter Name="Date" Type="date" Mode="In" />
-          <Parameter Name="Time" Type="time" Mode="In" />
-          <Parameter Name="Guest" Type="varchar" Mode="In" />
-          <Parameter Name="Description" Type="varchar(max)" Mode="In" />
-        </Function>
-        <Function Name="Usp_Update_Maintenance" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Id" Type="int" Mode="In" />
-          <Parameter Name="Machine" Type="varchar" Mode="In" />
-          <Parameter Name="IsRepair" Type="bit" Mode="In" />
-          <Parameter Name="IsMaintenance" Type="bit" Mode="In" />
-          <Parameter Name="IsReplace" Type="bit" Mode="In" />
-          <Parameter Name="Instruction" Type="varchar(max)" Mode="In" />
-          <Parameter Name="IsApproved" Type="bit" Mode="In" />
-          <Parameter Name="Estimate" Type="float" Mode="In" />
-          <Parameter Name="Bill" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="UpdateStatus" Type="bit" Mode="InOut" />
-          <Parameter Name="Result" Type="varchar(max)" Mode="InOut" />
-        </Function>
-        <Function Name="usp_UpdateCustomizedPlan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-          <Parameter Name="MemberId" Type="int" Mode="In" />
-          <Parameter Name="NutritionPlanCharge" Type="float" Mode="In" />
-          <Parameter Name="CustomizedNutritionPlan" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="TrainingPlanCharge" Type="float" Mode="In" />
-          <Parameter Name="CustomizedTrainingPlan" Type="varbinary(max)" Mode="In" />
-          <Parameter Name="NutritionistID" Type="int" Mode="In" />
-          <Parameter Name="TrainerID" Type="int" Mode="In" />
-          <Parameter Name="SupplimentId" Type="int" Mode="In" />
-        </Function>
-        <Function Name="usp_UpdateDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-          <Parameter Name="ReceiverName" Type="varchar" Mode="In" />
-          <Parameter Name="PaidAmount" Type="int" Mode="In" />
-          <Parameter Name="MemberID" Type="int" Mode="In" />
-          <Parameter Name="MembershipID" Type="int" Mode="In" />
-          <Parameter Name="PaymentMode" Type="int" Mode="In" />
-        </Function>
-        <Function Name="UspAppointmentDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
-        <Function Name="UspBookAppointment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="Name" Type="varchar" Mode="In" />
-          <Parameter Name="Contact" Type="varchar" Mode="In" />
-          <Parameter Name="Email" Type="varchar" Mode="In" />
-          <Parameter Name="AppointmentSubject" Type="varchar" Mode="In" />
-          <Parameter Name="AppointmentMessage" Type="varchar(max)" Mode="In" />
-          <Parameter Name="SlotDate" Type="date" Mode="In" />
-          <Parameter Name="SlotTime" Type="time" Mode="In" />
-          <Parameter Name="AppointmentStatus" Type="bit" Mode="In" />
-          <Parameter Name="IsDeleted" Type="bit" Mode="In" />
-        </Function>
-        <Function Name="UspCheckSlotAvailability" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="SlotDate" Type="date" Mode="In" />
-          <Parameter Name="SlotTime" Type="time" Mode="In" />
-          <Parameter Name="Availability" Type="bit" Mode="InOut" />
-        </Function>
-        <Function Name="UspDeleteAppointment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-        </Function>
-        <Function Name="UspEditAppointment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
-          <Parameter Name="ID" Type="int" Mode="In" />
-          <Parameter Name="Name" Type="varchar" Mode="In" />
-          <Parameter Name="Contact" Type="varchar" Mode="In" />
-          <Parameter Name="Email" Type="varchar" Mode="In" />
-          <Parameter Name="AppointmentSubject" Type="varchar" Mode="In" />
-          <Parameter Name="AppointmentMessage" Type="varchar(max)" Mode="In" />
-          <Parameter Name="SlotDate" Type="date" Mode="In" />
-          <Parameter Name="SlotTime" Type="time" Mode="In" />
-          <Parameter Name="AppointmentStatus" Type="bit" Mode="In" />
-        </Function>
-        <EntityContainer Name="T8GymDBModelStoreContainer">
+        <EntityContainer Name="GymDBModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblAppointment" EntityType="Self.TblAppointment" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TblBatch" EntityType="Self.TblBatch" Schema="dbo" store:Type="Tables" />
@@ -1258,7 +1067,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="T8GymDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="GymDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="sysdiagram">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -2200,7 +2009,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="GymMasterCS" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="T8GymDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="TblAppointments" EntityType="Self.TblAppointment" />
           <EntitySet Name="TblBatches" EntityType="Self.TblBatch" />
@@ -2402,296 +2211,15 @@
             <End Role="TblUserType" EntitySet="TblUserTypes" />
             <End Role="TblUserRole" EntitySet="TblUserRoles" />
           </AssociationSet>
-          <FunctionImport Name="sp_alterdiagram">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-            <Parameter Name="version" Mode="In" Type="Int32" />
-            <Parameter Name="definition" Mode="In" Type="Binary" />
-          </FunctionImport>
-          <FunctionImport Name="sp_creatediagram">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-            <Parameter Name="version" Mode="In" Type="Int32" />
-            <Parameter Name="definition" Mode="In" Type="Binary" />
-          </FunctionImport>
-          <FunctionImport Name="sp_dropdiagram">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(T8GymDBModel.sp_helpdiagramdefinition_Result)">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(T8GymDBModel.sp_helpdiagrams_Result)">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="sp_renamediagram">
-            <Parameter Name="diagramname" Mode="In" Type="String" />
-            <Parameter Name="owner_id" Mode="In" Type="Int32" />
-            <Parameter Name="new_diagramname" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="sp_upgraddiagrams" />
-          <FunctionImport Name="usp_AllPaymentsDetails" ReturnType="Collection(T8GymDBModel.usp_AllPaymentsDetails_Result)" />
-          <FunctionImport Name="usp_Create_EventDetails">
-            <Parameter Name="Name" Mode="In" Type="String" />
-            <Parameter Name="Date" Mode="In" Type="DateTime" />
-            <Parameter Name="Time" Mode="In" Type="Time" />
-            <Parameter Name="Guest" Mode="In" Type="String" />
-            <Parameter Name="Description" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_Delete">
-            <Parameter Name="id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_Delete_EventDetails">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_Delete_Maintenance">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
-            <Parameter Name="DeleteStatus" Mode="InOut" Type="Boolean" />
-            <Parameter Name="Result" Mode="InOut" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="usp_DeleteCustomizedPlan">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_DeleteDetails">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_GetAllCustomizedPlan" ReturnType="Collection(T8GymDBModel.usp_GetAllCustomizedPlan_Result)" />
-          <FunctionImport Name="Usp_Insert">
-            <Parameter Name="Activity" Mode="In" Type="String" />
-            <Parameter Name="Duration" Mode="In" Type="Double" />
-            <Parameter Name="WeekDay" Mode="In" Type="String" />
-            <Parameter Name="TrainierId" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_Insert_Maintenance">
-            <Parameter Name="Machine" Mode="In" Type="String" />
-            <Parameter Name="IsRepair" Mode="In" Type="Boolean" />
-            <Parameter Name="IsMaintenance" Mode="In" Type="Boolean" />
-            <Parameter Name="IsReplace" Mode="In" Type="Boolean" />
-            <Parameter Name="Instruction" Mode="In" Type="String" />
-            <Parameter Name="IsApproved" Mode="In" Type="Boolean" />
-            <Parameter Name="Estimate" Mode="In" Type="Double" />
-            <Parameter Name="Bill" Mode="In" Type="Binary" />
-            <Parameter Name="InsertStatus" Mode="InOut" Type="Boolean" />
-            <Parameter Name="Result" Mode="InOut" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="usp_InsertCustomizedPlan">
-            <Parameter Name="MemberId" Mode="In" Type="Int32" />
-            <Parameter Name="NutritionPlanCharge" Mode="In" Type="Double" />
-            <Parameter Name="CustomizedNutritionPlan" Mode="In" Type="Binary" />
-            <Parameter Name="TrainingPlanCharge" Mode="In" Type="Double" />
-            <Parameter Name="CustomizedTrainingPlan" Mode="In" Type="Binary" />
-            <Parameter Name="NutritionistID" Mode="In" Type="Int32" />
-            <Parameter Name="TrainerID" Mode="In" Type="Int32" />
-            <Parameter Name="SupplimentId" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_InsertDetails">
-            <Parameter Name="ReceiverName" Mode="In" Type="String" />
-            <Parameter Name="PaidAmount" Mode="In" Type="Int32" />
-            <Parameter Name="MemberID" Mode="In" Type="Int32" />
-            <Parameter Name="MembershipID" Mode="In" Type="Int32" />
-            <Parameter Name="PaymentMode" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_select" ReturnType="Collection(T8GymDBModel.Usp_select_Result)" />
-          <FunctionImport Name="Usp_Select_Maintenance" ReturnType="Collection(T8GymDBModel.Usp_Select_Maintenance_Result)">
-            <Parameter Name="Machine" Mode="In" Type="String" />
-            <Parameter Name="IsRepair" Mode="In" Type="Boolean" />
-            <Parameter Name="IsMaintenance" Mode="In" Type="Boolean" />
-            <Parameter Name="IsReplace" Mode="In" Type="Boolean" />
-            <Parameter Name="Instruction" Mode="In" Type="String" />
-            <Parameter Name="IsApproved" Mode="In" Type="Boolean" />
-            <Parameter Name="Estimate" Mode="In" Type="Double" />
-          </FunctionImport>
-          <FunctionImport Name="usp_SelectAll_EventDetails" ReturnType="Collection(T8GymDBModel.usp_SelectAll_EventDetails_Result)" />
-          <FunctionImport Name="usp_SelectById_EventDetails" ReturnType="Collection(T8GymDBModel.usp_SelectById_EventDetails_Result)">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_SelectById_Maintenance" ReturnType="Collection(T8GymDBModel.Usp_SelectById_Maintenance_Result)">
-            <Parameter Name="id" Mode="In" Type="Int32" />
-            <Parameter Name="MachineName" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="usp_SelectDetailsById" ReturnType="Collection(T8GymDBModel.usp_SelectDetailsById_Result)">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_Update">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="Activity" Mode="In" Type="String" />
-            <Parameter Name="Duration" Mode="In" Type="Double" />
-            <Parameter Name="WeekDay" Mode="In" Type="String" />
-            <Parameter Name="TrainierId" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_Update_EventDetails">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="Name" Mode="In" Type="String" />
-            <Parameter Name="Date" Mode="In" Type="DateTime" />
-            <Parameter Name="Time" Mode="In" Type="Time" />
-            <Parameter Name="Guest" Mode="In" Type="String" />
-            <Parameter Name="Description" Mode="In" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="Usp_Update_Maintenance">
-            <Parameter Name="Id" Mode="In" Type="Int32" />
-            <Parameter Name="Machine" Mode="In" Type="String" />
-            <Parameter Name="IsRepair" Mode="In" Type="Boolean" />
-            <Parameter Name="IsMaintenance" Mode="In" Type="Boolean" />
-            <Parameter Name="IsReplace" Mode="In" Type="Boolean" />
-            <Parameter Name="Instruction" Mode="In" Type="String" />
-            <Parameter Name="IsApproved" Mode="In" Type="Boolean" />
-            <Parameter Name="Estimate" Mode="In" Type="Double" />
-            <Parameter Name="Bill" Mode="In" Type="Binary" />
-            <Parameter Name="UpdateStatus" Mode="InOut" Type="Boolean" />
-            <Parameter Name="Result" Mode="InOut" Type="String" />
-          </FunctionImport>
-          <FunctionImport Name="usp_UpdateCustomizedPlan">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="MemberId" Mode="In" Type="Int32" />
-            <Parameter Name="NutritionPlanCharge" Mode="In" Type="Double" />
-            <Parameter Name="CustomizedNutritionPlan" Mode="In" Type="Binary" />
-            <Parameter Name="TrainingPlanCharge" Mode="In" Type="Double" />
-            <Parameter Name="CustomizedTrainingPlan" Mode="In" Type="Binary" />
-            <Parameter Name="NutritionistID" Mode="In" Type="Int32" />
-            <Parameter Name="TrainerID" Mode="In" Type="Int32" />
-            <Parameter Name="SupplimentId" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="usp_UpdateDetails">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="ReceiverName" Mode="In" Type="String" />
-            <Parameter Name="PaidAmount" Mode="In" Type="Int32" />
-            <Parameter Name="MemberID" Mode="In" Type="Int32" />
-            <Parameter Name="MembershipID" Mode="In" Type="Int32" />
-            <Parameter Name="PaymentMode" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="UspAppointmentDetails" ReturnType="Collection(T8GymDBModel.UspAppointmentDetails_Result)" />
-          <FunctionImport Name="UspBookAppointment">
-            <Parameter Name="Name" Mode="In" Type="String" />
-            <Parameter Name="Contact" Mode="In" Type="String" />
-            <Parameter Name="Email" Mode="In" Type="String" />
-            <Parameter Name="AppointmentSubject" Mode="In" Type="String" />
-            <Parameter Name="AppointmentMessage" Mode="In" Type="String" />
-            <Parameter Name="SlotDate" Mode="In" Type="DateTime" />
-            <Parameter Name="SlotTime" Mode="In" Type="Time" />
-            <Parameter Name="AppointmentStatus" Mode="In" Type="Boolean" />
-            <Parameter Name="IsDeleted" Mode="In" Type="Boolean" />
-          </FunctionImport>
-          <FunctionImport Name="UspCheckSlotAvailability">
-            <Parameter Name="SlotDate" Mode="In" Type="DateTime" />
-            <Parameter Name="SlotTime" Mode="In" Type="Time" />
-            <Parameter Name="Availability" Mode="InOut" Type="Boolean" />
-          </FunctionImport>
-          <FunctionImport Name="UspDeleteAppointment">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-          </FunctionImport>
-          <FunctionImport Name="UspEditAppointment">
-            <Parameter Name="ID" Mode="In" Type="Int32" />
-            <Parameter Name="Name" Mode="In" Type="String" />
-            <Parameter Name="Contact" Mode="In" Type="String" />
-            <Parameter Name="Email" Mode="In" Type="String" />
-            <Parameter Name="AppointmentSubject" Mode="In" Type="String" />
-            <Parameter Name="AppointmentMessage" Mode="In" Type="String" />
-            <Parameter Name="SlotDate" Mode="In" Type="DateTime" />
-            <Parameter Name="SlotTime" Mode="In" Type="Time" />
-            <Parameter Name="AppointmentStatus" Mode="In" Type="Boolean" />
-          </FunctionImport>
         </EntityContainer>
-        <ComplexType Name="sp_helpdiagramdefinition_Result">
-          <Property Type="Int32" Name="version" Nullable="true" />
-          <Property Type="Binary" Name="definition" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="sp_helpdiagrams_Result">
-          <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-          <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-          <Property Type="Int32" Name="OwnerID" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="usp_AllPaymentsDetails_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="ReceiverName" Nullable="true" MaxLength="50" />
-          <Property Type="Int32" Name="PaidAmount" Nullable="false" />
-          <Property Type="Int32" Name="MemberID" Nullable="false" />
-          <Property Type="Int32" Name="MembershipID" Nullable="false" />
-          <Property Type="Int32" Name="PaymentModeID" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="usp_GetAllCustomizedPlan_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="Int32" Name="MemberId" Nullable="false" />
-          <Property Type="Double" Name="NutritionPlanCharge" Nullable="false" />
-          <Property Type="Binary" Name="CustomizedNutritionPlan" Nullable="true" />
-          <Property Type="Double" Name="TrainingPlanCharge" Nullable="false" />
-          <Property Type="Binary" Name="CustomizedTrainingPlan" Nullable="true" />
-          <Property Type="Int32" Name="NutritionistID" Nullable="true" />
-          <Property Type="Int32" Name="TrainerID" Nullable="true" />
-          <Property Type="Int32" Name="SupplimentId" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="Usp_select_Result">
-          <Property Type="String" Name="Activity" Nullable="false" MaxLength="50" />
-          <Property Type="Double" Name="Duration__hr_" Nullable="false" />
-          <Property Type="String" Name="WeekDay" Nullable="false" MaxLength="20" />
-          <Property Type="Int32" Name="TrainierId" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="Usp_Select_Maintenance_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Machine" Nullable="true" MaxLength="50" />
-          <Property Type="Boolean" Name="IsRepair" Nullable="true" />
-          <Property Type="Boolean" Name="IsMaintenance" Nullable="true" />
-          <Property Type="Boolean" Name="IsReplace" Nullable="true" />
-          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
-          <Property Type="String" Name="Instruction" Nullable="true" />
-          <Property Type="Double" Name="Estimate" Nullable="true" />
-          <Property Type="Binary" Name="Bill" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="usp_SelectAll_EventDetails_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
-          <Property Type="DateTime" Name="Date" Nullable="true" />
-          <Property Type="Time" Name="Time" Nullable="true" />
-          <Property Type="String" Name="Guest" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="Description" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="usp_SelectById_EventDetails_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
-          <Property Type="DateTime" Name="Date" Nullable="true" />
-          <Property Type="Time" Name="Time" Nullable="true" />
-          <Property Type="String" Name="Guest" Nullable="true" MaxLength="100" />
-          <Property Type="String" Name="Description" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="Usp_SelectById_Maintenance_Result">
-          <Property Type="String" Name="Machine" Nullable="true" MaxLength="50" />
-          <Property Type="Boolean" Name="IsRepair" Nullable="true" />
-          <Property Type="Boolean" Name="IsMaintenance" Nullable="true" />
-          <Property Type="Boolean" Name="IsReplace" Nullable="true" />
-          <Property Type="Boolean" Name="IsApproved" Nullable="true" />
-          <Property Type="String" Name="Instruction" Nullable="true" />
-          <Property Type="Double" Name="Estimate" Nullable="true" />
-          <Property Type="Binary" Name="Bill" Nullable="true" />
-        </ComplexType>
-        <ComplexType Name="usp_SelectDetailsById_Result">
-          <Property Type="String" Name="ReceiverName" Nullable="true" MaxLength="50" />
-          <Property Type="Int32" Name="PaidAmount" Nullable="false" />
-          <Property Type="Int32" Name="MemberID" Nullable="false" />
-          <Property Type="Int32" Name="MembershipID" Nullable="false" />
-          <Property Type="Int32" Name="PaymentModeID" Nullable="false" />
-        </ComplexType>
-        <ComplexType Name="UspAppointmentDetails_Result">
-          <Property Type="Int32" Name="ID" Nullable="false" />
-          <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
-          <Property Type="String" Name="Contact" Nullable="false" MaxLength="10" />
-          <Property Type="String" Name="Email" Nullable="false" MaxLength="100" />
-          <Property Type="String" Name="AppointmentSubject" Nullable="true" MaxLength="500" />
-          <Property Type="String" Name="AppointmentMessage" Nullable="true" />
-          <Property Type="DateTime" Name="SlotDate" Nullable="false" />
-          <Property Type="Time" Name="SlotTime" Nullable="false" />
-          <Property Type="Boolean" Name="AppointmentStatus" Nullable="true" />
-        </ComplexType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="T8GymDBModelStoreContainer" CdmEntityContainer="GymMasterCS">
+        <EntityContainerMapping StorageEntityContainer="GymDBModelStoreContainer" CdmEntityContainer="T8GymDBEntities">
           <EntitySetMapping Name="sysdiagrams">
-            <EntityTypeMapping TypeName="T8GymDBModel.sysdiagram">
+            <EntityTypeMapping TypeName="GymDBModel.sysdiagram">
               <MappingFragment StoreEntitySet="sysdiagrams">
                 <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -2702,7 +2230,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblAppointments">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblAppointment">
+            <EntityTypeMapping TypeName="GymDBModel.TblAppointment">
               <MappingFragment StoreEntitySet="TblAppointment">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2718,7 +2246,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblBatches">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblBatch">
+            <EntityTypeMapping TypeName="GymDBModel.TblBatch">
               <MappingFragment StoreEntitySet="TblBatch">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Activity" ColumnName="Activity" />
@@ -2729,7 +2257,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblBloodDetails">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblBloodDetail">
+            <EntityTypeMapping TypeName="GymDBModel.TblBloodDetail">
               <MappingFragment StoreEntitySet="TblBloodDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="BloodGroup" ColumnName="BloodGroup" />
@@ -2737,7 +2265,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblCities">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblCity">
+            <EntityTypeMapping TypeName="GymDBModel.TblCity">
               <MappingFragment StoreEntitySet="TblCity">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2746,7 +2274,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblCorporateMemberships">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblCorporateMembership">
+            <EntityTypeMapping TypeName="GymDBModel.TblCorporateMembership">
               <MappingFragment StoreEntitySet="TblCorporateMembership">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
@@ -2757,7 +2285,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblCustomizedPlans">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblCustomizedPlan">
+            <EntityTypeMapping TypeName="GymDBModel.TblCustomizedPlan">
               <MappingFragment StoreEntitySet="TblCustomizedPlan">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="MemberId" ColumnName="MemberId" />
@@ -2772,7 +2300,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblEventDetails">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblEventDetail">
+            <EntityTypeMapping TypeName="GymDBModel.TblEventDetail">
               <MappingFragment StoreEntitySet="TblEventDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2784,7 +2312,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblGalleries">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblGallery">
+            <EntityTypeMapping TypeName="GymDBModel.TblGallery">
               <MappingFragment StoreEntitySet="TblGallery">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Photo" ColumnName="Photo" />
@@ -2793,7 +2321,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblGenders">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblGender">
+            <EntityTypeMapping TypeName="GymDBModel.TblGender">
               <MappingFragment StoreEntitySet="TblGender">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
@@ -2801,7 +2329,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblHolidayDetails">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblHolidayDetail">
+            <EntityTypeMapping TypeName="GymDBModel.TblHolidayDetail">
               <MappingFragment StoreEntitySet="TblHolidayDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
@@ -2810,7 +2338,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblLevels">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblLevel">
+            <EntityTypeMapping TypeName="GymDBModel.TblLevel">
               <MappingFragment StoreEntitySet="TblLevel">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Level" ColumnName="Level" />
@@ -2820,7 +2348,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblLogs">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblLog">
+            <EntityTypeMapping TypeName="GymDBModel.TblLog">
               <MappingFragment StoreEntitySet="TblLogs">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
@@ -2833,7 +2361,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblMaintenances">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblMaintenance">
+            <EntityTypeMapping TypeName="GymDBModel.TblMaintenance">
               <MappingFragment StoreEntitySet="TblMaintenance">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Machine" ColumnName="Machine" />
@@ -2848,7 +2376,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblMembers">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblMember">
+            <EntityTypeMapping TypeName="GymDBModel.TblMember">
               <MappingFragment StoreEntitySet="TblMembers">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2878,7 +2406,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblMemberships">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblMembership">
+            <EntityTypeMapping TypeName="GymDBModel.TblMembership">
               <MappingFragment StoreEntitySet="TblMembership">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2899,7 +2427,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblNutritionists">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblNutritionist">
+            <EntityTypeMapping TypeName="GymDBModel.TblNutritionist">
               <MappingFragment StoreEntitySet="TblNutritionist">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2918,7 +2446,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblOfferDetails">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblOfferDetail">
+            <EntityTypeMapping TypeName="GymDBModel.TblOfferDetail">
               <MappingFragment StoreEntitySet="TblOfferDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
@@ -2929,7 +2457,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblOwners">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblOwner">
+            <EntityTypeMapping TypeName="GymDBModel.TblOwner">
               <MappingFragment StoreEntitySet="TblOwners">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2943,7 +2471,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblPaymentDetails">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblPaymentDetail">
+            <EntityTypeMapping TypeName="GymDBModel.TblPaymentDetail">
               <MappingFragment StoreEntitySet="TblPaymentDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="ReceiverName" ColumnName="ReceiverName" />
@@ -2955,7 +2483,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblPaymentModes">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblPaymentMode">
+            <EntityTypeMapping TypeName="GymDBModel.TblPaymentMode">
               <MappingFragment StoreEntitySet="TblPaymentMode">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="PaymentMode" ColumnName="PaymentMode" />
@@ -2963,7 +2491,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblRoles">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblRole">
+            <EntityTypeMapping TypeName="GymDBModel.TblRole">
               <MappingFragment StoreEntitySet="TblRole">
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
@@ -2971,7 +2499,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblStaffs">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblStaff">
+            <EntityTypeMapping TypeName="GymDBModel.TblStaff">
               <MappingFragment StoreEntitySet="TblStaff">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2990,7 +2518,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblStates">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblState">
+            <EntityTypeMapping TypeName="GymDBModel.TblState">
               <MappingFragment StoreEntitySet="TblState">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -2998,7 +2526,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblSupplements">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblSupplement">
+            <EntityTypeMapping TypeName="GymDBModel.TblSupplement">
               <MappingFragment StoreEntitySet="TblSupplement">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -3009,7 +2537,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblTrainers">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblTrainer">
+            <EntityTypeMapping TypeName="GymDBModel.TblTrainer">
               <MappingFragment StoreEntitySet="TblTrainer">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -3028,7 +2556,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblUserRoles">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblUserRole">
+            <EntityTypeMapping TypeName="GymDBModel.TblUserRole">
               <MappingFragment StoreEntitySet="TblUserRole">
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -3037,7 +2565,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblUsers">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblUser">
+            <EntityTypeMapping TypeName="GymDBModel.TblUser">
               <MappingFragment StoreEntitySet="TblUsers">
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserGuid" ColumnName="UserGuid" />
@@ -3050,7 +2578,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TblUserTypes">
-            <EntityTypeMapping TypeName="T8GymDBModel.TblUserType">
+            <EntityTypeMapping TypeName="GymDBModel.TblUserType">
               <MappingFragment StoreEntitySet="TblUserType">
                 <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
                 <ScalarProperty Name="UserTypeGuid" ColumnName="UserTypeGuid" />
@@ -3058,165 +2586,6 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="T8GymDBModel.Store.sp_alterdiagram" />
-          <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="T8GymDBModel.Store.sp_creatediagram" />
-          <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="T8GymDBModel.Store.sp_dropdiagram" />
-          <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="T8GymDBModel.Store.sp_helpdiagramdefinition">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.sp_helpdiagramdefinition_Result">
-                <ScalarProperty Name="version" ColumnName="version" />
-                <ScalarProperty Name="definition" ColumnName="definition" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="T8GymDBModel.Store.sp_helpdiagrams">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.sp_helpdiagrams_Result">
-                <ScalarProperty Name="Database" ColumnName="Database" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Owner" ColumnName="Owner" />
-                <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="T8GymDBModel.Store.sp_renamediagram" />
-          <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="T8GymDBModel.Store.sp_upgraddiagrams" />
-          <FunctionImportMapping FunctionImportName="usp_AllPaymentsDetails" FunctionName="T8GymDBModel.Store.usp_AllPaymentsDetails">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.usp_AllPaymentsDetails_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="ReceiverName" ColumnName="ReceiverName" />
-                <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
-                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
-                <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
-                <ScalarProperty Name="PaymentModeID" ColumnName="PaymentModeID" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="usp_Create_EventDetails" FunctionName="T8GymDBModel.Store.usp_Create_EventDetails" />
-          <FunctionImportMapping FunctionImportName="Usp_Delete" FunctionName="T8GymDBModel.Store.Usp_Delete" />
-          <FunctionImportMapping FunctionImportName="usp_Delete_EventDetails" FunctionName="T8GymDBModel.Store.usp_Delete_EventDetails" />
-          <FunctionImportMapping FunctionImportName="Usp_Delete_Maintenance" FunctionName="T8GymDBModel.Store.Usp_Delete_Maintenance" />
-          <FunctionImportMapping FunctionImportName="usp_DeleteCustomizedPlan" FunctionName="T8GymDBModel.Store.usp_DeleteCustomizedPlan" />
-          <FunctionImportMapping FunctionImportName="usp_DeleteDetails" FunctionName="T8GymDBModel.Store.usp_DeleteDetails" />
-          <FunctionImportMapping FunctionImportName="usp_GetAllCustomizedPlan" FunctionName="T8GymDBModel.Store.usp_GetAllCustomizedPlan">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.usp_GetAllCustomizedPlan_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="MemberId" ColumnName="MemberId" />
-                <ScalarProperty Name="NutritionPlanCharge" ColumnName="NutritionPlanCharge" />
-                <ScalarProperty Name="CustomizedNutritionPlan" ColumnName="CustomizedNutritionPlan" />
-                <ScalarProperty Name="TrainingPlanCharge" ColumnName="TrainingPlanCharge" />
-                <ScalarProperty Name="CustomizedTrainingPlan" ColumnName="CustomizedTrainingPlan" />
-                <ScalarProperty Name="NutritionistID" ColumnName="NutritionistID" />
-                <ScalarProperty Name="TrainerID" ColumnName="TrainerID" />
-                <ScalarProperty Name="SupplimentId" ColumnName="SupplimentId" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="Usp_Insert" FunctionName="T8GymDBModel.Store.Usp_Insert" />
-          <FunctionImportMapping FunctionImportName="Usp_Insert_Maintenance" FunctionName="T8GymDBModel.Store.Usp_Insert_Maintenance" />
-          <FunctionImportMapping FunctionImportName="usp_InsertCustomizedPlan" FunctionName="T8GymDBModel.Store.usp_InsertCustomizedPlan" />
-          <FunctionImportMapping FunctionImportName="usp_InsertDetails" FunctionName="T8GymDBModel.Store.usp_InsertDetails" />
-          <FunctionImportMapping FunctionImportName="Usp_select" FunctionName="T8GymDBModel.Store.Usp_select">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.Usp_select_Result">
-                <ScalarProperty Name="Activity" ColumnName="Activity" />
-                <ScalarProperty Name="Duration__hr_" ColumnName="Duration (hr)" />
-                <ScalarProperty Name="WeekDay" ColumnName="WeekDay" />
-                <ScalarProperty Name="TrainierId" ColumnName="TrainierId" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="Usp_Select_Maintenance" FunctionName="T8GymDBModel.Store.Usp_Select_Maintenance">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.Usp_Select_Maintenance_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Machine" ColumnName="Machine" />
-                <ScalarProperty Name="IsRepair" ColumnName="IsRepair" />
-                <ScalarProperty Name="IsMaintenance" ColumnName="IsMaintenance" />
-                <ScalarProperty Name="IsReplace" ColumnName="IsReplace" />
-                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
-                <ScalarProperty Name="Instruction" ColumnName="Instruction" />
-                <ScalarProperty Name="Estimate" ColumnName="Estimate" />
-                <ScalarProperty Name="Bill" ColumnName="Bill" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="usp_SelectAll_EventDetails" FunctionName="T8GymDBModel.Store.usp_SelectAll_EventDetails">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.usp_SelectAll_EventDetails_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Time" ColumnName="Time" />
-                <ScalarProperty Name="Guest" ColumnName="Guest" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="usp_SelectById_EventDetails" FunctionName="T8GymDBModel.Store.usp_SelectById_EventDetails">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.usp_SelectById_EventDetails_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Date" ColumnName="Date" />
-                <ScalarProperty Name="Time" ColumnName="Time" />
-                <ScalarProperty Name="Guest" ColumnName="Guest" />
-                <ScalarProperty Name="Description" ColumnName="Description" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="Usp_SelectById_Maintenance" FunctionName="T8GymDBModel.Store.Usp_SelectById_Maintenance">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.Usp_SelectById_Maintenance_Result">
-                <ScalarProperty Name="Machine" ColumnName="Machine" />
-                <ScalarProperty Name="IsRepair" ColumnName="IsRepair" />
-                <ScalarProperty Name="IsMaintenance" ColumnName="IsMaintenance" />
-                <ScalarProperty Name="IsReplace" ColumnName="IsReplace" />
-                <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
-                <ScalarProperty Name="Instruction" ColumnName="Instruction" />
-                <ScalarProperty Name="Estimate" ColumnName="Estimate" />
-                <ScalarProperty Name="Bill" ColumnName="Bill" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="usp_SelectDetailsById" FunctionName="T8GymDBModel.Store.usp_SelectDetailsById">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.usp_SelectDetailsById_Result">
-                <ScalarProperty Name="ReceiverName" ColumnName="ReceiverName" />
-                <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
-                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
-                <ScalarProperty Name="MembershipID" ColumnName="MembershipID" />
-                <ScalarProperty Name="PaymentModeID" ColumnName="PaymentModeID" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="Usp_Update" FunctionName="T8GymDBModel.Store.Usp_Update" />
-          <FunctionImportMapping FunctionImportName="usp_Update_EventDetails" FunctionName="T8GymDBModel.Store.usp_Update_EventDetails" />
-          <FunctionImportMapping FunctionImportName="Usp_Update_Maintenance" FunctionName="T8GymDBModel.Store.Usp_Update_Maintenance" />
-          <FunctionImportMapping FunctionImportName="usp_UpdateCustomizedPlan" FunctionName="T8GymDBModel.Store.usp_UpdateCustomizedPlan" />
-          <FunctionImportMapping FunctionImportName="usp_UpdateDetails" FunctionName="T8GymDBModel.Store.usp_UpdateDetails" />
-          <FunctionImportMapping FunctionImportName="UspAppointmentDetails" FunctionName="T8GymDBModel.Store.UspAppointmentDetails">
-            <ResultMapping>
-              <ComplexTypeMapping TypeName="T8GymDBModel.UspAppointmentDetails_Result">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Name" ColumnName="Name" />
-                <ScalarProperty Name="Contact" ColumnName="Contact" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="AppointmentSubject" ColumnName="AppointmentSubject" />
-                <ScalarProperty Name="AppointmentMessage" ColumnName="AppointmentMessage" />
-                <ScalarProperty Name="SlotDate" ColumnName="SlotDate" />
-                <ScalarProperty Name="SlotTime" ColumnName="SlotTime" />
-                <ScalarProperty Name="AppointmentStatus" ColumnName="AppointmentStatus" />
-              </ComplexTypeMapping>
-            </ResultMapping>
-          </FunctionImportMapping>
-          <FunctionImportMapping FunctionImportName="UspBookAppointment" FunctionName="T8GymDBModel.Store.UspBookAppointment" />
-          <FunctionImportMapping FunctionImportName="UspCheckSlotAvailability" FunctionName="T8GymDBModel.Store.UspCheckSlotAvailability" />
-          <FunctionImportMapping FunctionImportName="UspDeleteAppointment" FunctionName="T8GymDBModel.Store.UspDeleteAppointment" />
-          <FunctionImportMapping FunctionImportName="UspEditAppointment" FunctionName="T8GymDBModel.Store.UspEditAppointment" />
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>
