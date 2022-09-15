@@ -2724,6 +2724,8 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
+    <Compile Include="Controllers\CustomizedPlansController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\GymController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -2792,11 +2794,19 @@
     <Content Include="Views\Members\Details.cshtml" />
     <Content Include="Views\Members\Edit.cshtml" />
     <Content Include="Views\Members\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Staff\Create.cshtml" />
     <Content Include="Views\Staff\Delete.cshtml" />
     <Content Include="Views\Staff\Details.cshtml" />
     <Content Include="Views\Staff\Edit.cshtml" />
     <Content Include="Views\Staff\Index.cshtml" />
+=======
+    <Content Include="Views\CustomizedPlans\Create.cshtml" />
+    <Content Include="Views\CustomizedPlans\Delete.cshtml" />
+    <Content Include="Views\CustomizedPlans\Details.cshtml" />
+    <Content Include="Views\CustomizedPlans\Edit.cshtml" />
+    <Content Include="Views\CustomizedPlans\Index.cshtml" />
+>>>>>>> 49ab2655e92de89a0ad769065c46855e8b9ac239
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
