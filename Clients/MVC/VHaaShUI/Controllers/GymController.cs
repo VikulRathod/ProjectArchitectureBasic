@@ -11,6 +11,7 @@ namespace VHaaSh.WEB.Controllers
         // GET: Gym
         public ActionResult Index()
         {
+            //jgfjgfjygyfuyjf
             return View();
         }
     }
