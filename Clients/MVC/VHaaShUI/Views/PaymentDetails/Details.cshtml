@@ -1,0 +1,68 @@
+﻿@model VHaaSh.API.Modals.Database_Models.TblPaymentDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+<div class="container-fluid page-header mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Here are the PaymentDetails</h4>
+        <div class="d-inline-flex">
+            <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">Paymentdetails</p>
+        </div>
+    </div>
+</div>
+<div>
+    <h4>TblPaymentDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiverName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiverName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PaidAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PaidAmount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblMember.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblMember.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblMembership.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblMembership.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblPaymentMode.PaymentMode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblPaymentMode.PaymentMode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
