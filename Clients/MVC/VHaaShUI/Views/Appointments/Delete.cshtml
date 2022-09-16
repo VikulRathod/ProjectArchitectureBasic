@@ -2,107 +2,108 @@
 
 @{
     ViewBag.Title = "Delete";
-    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <!-- Page Header Start -->
-<div class="container-fluid page-header mb-5">
+@*<div class="container-fluid page-header mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">About Us</h4>
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Delete Appointment</h4>
         <div class="d-inline-flex">
             <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
             <p class="m-0 text-white px-2">/</p>
-            <p class="m-0 text-white">About Us</p>
+            <p class="m-0 text-white">Delete</p>
         </div>
     </div>
-</div>
+</div>*@
 <!-- Page Header End -->
-<h3>Are you sure you want to delete this?</h3>
-<div>
-    <h4>TblAppointment</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+<div class="content-wrapper">
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Contact)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Contact)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Email)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Email)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AppointmentSubject)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.AppointmentSubject)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AppointmentSubject)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.AppointmentSubject)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AppointmentMessage)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.AppointmentMessage)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AppointmentMessage)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.AppointmentMessage)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SlotDate)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SlotDate)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SlotDate)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SlotDate)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.SlotTime)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.SlotTime)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.SlotTime)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.SlotTime)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.AppointmentStatus)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.AppointmentStatus)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.AppointmentStatus)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.AppointmentStatus)
+            </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.IsDeleted)
-        </dt>
+            <dt>
+                @Html.DisplayNameFor(model => model.IsDeleted)
+            </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.IsDeleted)
-        </dd>
+            <dd>
+                @Html.DisplayFor(model => model.IsDeleted)
+            </dd>
 
-    </dl>
+        </dl>
 
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
-    }
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
 </div>
