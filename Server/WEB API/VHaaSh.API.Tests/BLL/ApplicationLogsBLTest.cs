@@ -21,7 +21,7 @@ namespace VHaaSh.API.Tests.BLL
             var applicationLogsDB = A.Fake<IApplicationLogsDB>();
             ApplicationLogsBL appLogs = new ApplicationLogsBL(applicationLogsDB);
 
-            // act
+            // Act
             appLogs.Debug("HELLO");
 
             // assert            
