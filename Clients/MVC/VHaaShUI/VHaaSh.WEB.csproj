@@ -2720,18 +2720,23 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
+    <Compile Include="Controllers\BatchesController.cs" />
     <Compile Include="Controllers\CustomizedPlansController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\EventDetailsController.cs" />
+    <Compile Include="Controllers\HolidayDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MaintenancesController.cs" />
     <Compile Include="Controllers\MembersController.cs" />
+    <Compile Include="Controllers\MembershipsController.cs" />
     <Compile Include="Controllers\NutritionistsController.cs" />
     <Compile Include="Controllers\OfferDetailsController.cs" />
     <Compile Include="Controllers\OwnersController.cs" />
     <Compile Include="Controllers\PaymentDetailsController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
+    <Compile Include="Controllers\SupplementsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2817,6 +2822,31 @@
     <Content Include="Views\Maintenances\Details.cshtml" />
     <Content Include="Views\Maintenances\Edit.cshtml" />
     <Content Include="Views\Maintenances\Index.cshtml" />
+    <Content Include="Views\Supplements\Create.cshtml" />
+    <Content Include="Views\Supplements\Delete.cshtml" />
+    <Content Include="Views\Supplements\Details.cshtml" />
+    <Content Include="Views\Supplements\Edit.cshtml" />
+    <Content Include="Views\Supplements\Index.cshtml" />
+    <Content Include="Views\EventDetails\Create.cshtml" />
+    <Content Include="Views\EventDetails\Delete.cshtml" />
+    <Content Include="Views\EventDetails\Details.cshtml" />
+    <Content Include="Views\EventDetails\Edit.cshtml" />
+    <Content Include="Views\EventDetails\Index.cshtml" />
+    <Content Include="Views\HolidayDetails\Create.cshtml" />
+    <Content Include="Views\HolidayDetails\Delete.cshtml" />
+    <Content Include="Views\HolidayDetails\Details.cshtml" />
+    <Content Include="Views\HolidayDetails\Edit.cshtml" />
+    <Content Include="Views\HolidayDetails\Index.cshtml" />
+    <Content Include="Views\Memberships\Create.cshtml" />
+    <Content Include="Views\Memberships\Delete.cshtml" />
+    <Content Include="Views\Memberships\Details.cshtml" />
+    <Content Include="Views\Memberships\Edit.cshtml" />
+    <Content Include="Views\Memberships\Index.cshtml" />
+    <Content Include="Views\Batches\Create.cshtml" />
+    <Content Include="Views\Batches\Delete.cshtml" />
+    <Content Include="Views\Batches\Details.cshtml" />
+    <Content Include="Views\Batches\Edit.cshtml" />
+    <Content Include="Views\Batches\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

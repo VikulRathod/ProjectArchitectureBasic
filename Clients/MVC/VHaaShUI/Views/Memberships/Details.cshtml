@@ -1,0 +1,131 @@
+﻿@model VHaaSh.API.Modals.Database_Models.TblMembership
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TblMembership</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fee)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fee)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Swimming)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Swimming)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cardio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cardio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StrengthTraining)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StrengthTraining)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SteamBath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SteamBath)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CrossFit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CrossFit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boxing)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boxing)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Zumba)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Zumba)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BasicWorkoutPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BasicWorkoutPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomWorkoutPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomWorkoutPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BasicDietPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BasicDietPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomDietPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomDietPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TblLevel.Level)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TblLevel.Level)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
