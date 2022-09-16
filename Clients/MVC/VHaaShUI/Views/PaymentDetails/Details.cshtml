@@ -5,21 +5,21 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h2>Details</h2>
+
 <div class="container-fluid page-header mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Here are the PaymentDetails</h4>
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Payment Details</h4>
         <div class="d-inline-flex">
             <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
             <p class="m-0 text-white px-2">/</p>
-            <p class="m-0 text-white">Paymentdetails</p>
+            <p class="m-0 text-white">Details</p>
         </div>
     </div>
 </div>
-<div>
+<div class="container py-5">
     <h4>TblPaymentDetail</h4>
     <hr />
-    <dl class="dl-horizontal">
+    <dl class="dl-horizontal ">
         <dt>
             @Html.DisplayNameFor(model => model.ReceiverName)
         </dt>

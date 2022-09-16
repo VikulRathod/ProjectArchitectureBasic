@@ -5,79 +5,81 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-<h2>Index</h2>
+
 <!-- Page Header Start -->
 <div class="container-fluid page-header mb-5">
     <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
-        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">About Us</h4>
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">All Owners</h4>
         <div class="d-inline-flex">
             <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
             <p class="m-0 text-white px-2">/</p>
-            <p class="m-0 text-white">About Us</p>
+            <p class="m-0 text-white">Owner List</p>
         </div>
     </div>
 </div>
 <!-- Page Header End -->
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Contact)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TblBloodDetail.BloodGroup)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TblCity.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TblState.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TblUser.UserName)
-        </th>
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
+<div class="container py-5">
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contact)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblBloodDetail.BloodGroup)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblCity.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblState.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblUser.UserName)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-            </td>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TblBloodDetail.BloodGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TblCity.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TblState.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TblUser.UserName)
+            </th>
+            <th></th>
         </tr>
-    }
 
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblBloodDetail.BloodGroup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblCity.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblState.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblUser.UserName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
