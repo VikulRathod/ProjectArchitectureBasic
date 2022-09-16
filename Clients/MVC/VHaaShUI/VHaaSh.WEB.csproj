@@ -2725,6 +2725,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AppointmentsController.cs" />
     <Compile Include="Controllers\BatchesController.cs" />
+    <Compile Include="Controllers\CorporateMembershipsController.cs" />
     <Compile Include="Controllers\CustomizedPlansController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
@@ -2851,6 +2852,16 @@
     <Content Include="Views\Batches\Details.cshtml" />
     <Content Include="Views\Batches\Edit.cshtml" />
     <Content Include="Views\Batches\Index.cshtml" />
+    <Content Include="Views\CorporateMemberships\Create.cshtml" />
+    <Content Include="Views\CorporateMemberships\Delete.cshtml" />
+    <Content Include="Views\CorporateMemberships\Details.cshtml" />
+    <Content Include="Views\CorporateMemberships\Edit.cshtml" />
+    <Content Include="Views\CorporateMemberships\Index.cshtml" />
+    <Content Include="Views\vw_batch\Create.cshtml" />
+    <Content Include="Views\vw_batch\Delete.cshtml" />
+    <Content Include="Views\vw_batch\Details.cshtml" />
+    <Content Include="Views\vw_batch\Edit.cshtml" />
+    <Content Include="Views\vw_batch\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

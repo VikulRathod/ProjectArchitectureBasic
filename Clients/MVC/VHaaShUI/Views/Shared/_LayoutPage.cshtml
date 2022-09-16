@@ -19,8 +19,9 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/NewFreeTemplate/css/style.min.css" rel="stylesheet">
-    
 
+    @*//js added*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
 
 </head>
 <body class="bg-white">
@@ -35,14 +36,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto p-4 bg-secondary">
-                    @Html.ActionLink("Home", "Index", null, new { @class = "nav-item nav-link customLink" })
-                    @Html.ActionLink("About", "About", null, new { @class = "nav-item nav-link customLink" })
-                    @Html.ActionLink("Our Features", "feature", null, new { @class = "nav-item nav-link customLink" })
-                    @Html.ActionLink("Classes", "Class", null, new { @class = "nav-item nav-link customLink" })
-
-                    @Html.ActionLink("Contact", "Contact", null, new { @class = "nav-item nav-link customLink" })
-                    @Html.ActionLink("Login", "", null, new { @class = "nav-item  nav-link text-White " })
-                    @Html.ActionLink("Register", "", null, new { @class = "nav-item nav-link text-White " })
+                    @Html.ActionLink("Home", "Index", "Default" ,null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("About", "About","Default" ,null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("Our Features", "feature", "Default", null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("Classes", "Class", "Default", null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("Contact", "Contact", "Default", null, new { @class = "nav-item nav-link customLink" })
+                    @Html.ActionLink("Login", "", "Default", null, new { @class = "nav-item  nav-link text-White " })
+                    @Html.ActionLink("Register", "", "Default", null, new { @class = "nav-item nav-link text-White " })
                 </div>
             </div>
         </nav>
@@ -59,8 +59,8 @@
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Get In Touch</h4>
-                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Sinhgad road,Pune</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+91 8888855555</p>
                 <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
                 <div class="d-flex justify-content-start mt-4">
                     <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -72,35 +72,47 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Quick Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    @*<a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>*@
+
+                    @Html.ActionLink("Home", "Index", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("About", "About", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Our Features", "feature", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Classes", "Class", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Contact", "Contact", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Popular Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                    @*<a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+        <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>*@
+
+                    @Html.ActionLink("Trainers", "Index", "Trainers", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Batches", "Index", "Batches", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Offers", "Index", "OfferDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Events", "Index", "EventDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                    @Html.ActionLink("Holidays", "Index", "HolidayDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-primary mb-4">Opening Hours</h4>
                 <h5 class="text-white">Monday - Friday</h5>
-                <p>8.00 AM - 8.00 PM</p>
+                <p>6.00 AM - 10.00 PM</p>
                 <h5 class="text-white">Saturday - Sunday</h5>
-                <p>2.00 PM - 8.00 PM</p>
+                <p>Holiday</p>
             </div>
         </div>
         <div class="container border-top border-dark pt-5">
             <p class="m-0 text-center text-white">
-                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+                &copy; <a class="text-white font-weight-bold" href="#">FatToFit Glance</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="https://htmlcodex.com">TEAM 8</a>
             </p>
         </div>
     </div>
