@@ -1,0 +1,89 @@
+﻿@model IEnumerable<VHaaSh.API.Modals.Database_Models.TblMaintenance>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Mmaintenance</h4>
+        <div class="d-inline-flex">
+            <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">About Us</p>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<div class="container-fluid" style="width:fit-content">
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new {@class="btn btn-outline-secondary"})
+    </p>
+    <table class="table table-bordered table-responsive p-5 table-hover" id="myTable">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Machine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsRepair)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsMaintenance)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsReplace)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsApproved)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Instruction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estimate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bill)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Machine)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsRepair)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsMaintenance)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsReplace)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsApproved)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Instruction)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Estimate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bill)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

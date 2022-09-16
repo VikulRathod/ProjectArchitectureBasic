@@ -1,0 +1,97 @@
+﻿@model VHaaSh.API.Modals.Database_Models.TblMaintenance
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+        <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">About Us</h4>
+        <div class="d-inline-flex">
+            <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white px-2">/</p>
+            <p class="m-0 text-white">About Us</p>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+<div class="container py-5 table table-bordered">
+    <h4 class="text text-danger">Maintenance Details</h4>
+    <hr />
+    <dl class="dl-horizontal px-3">
+        <dt>
+            @Html.DisplayNameFor(model => model.Machine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Machine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsRepair)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsRepair)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsMaintenance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsMaintenance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsReplace)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsReplace)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsApproved)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsApproved)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Instruction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Instruction)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Estimate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Estimate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bill)
+        </dd>
+
+    </dl>
+    <dl>
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ID }, new { @class = "btn btn-outline-success" }) |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-outline-secondary" })
+        </p>
+
+    </dl>
+
+</div>
