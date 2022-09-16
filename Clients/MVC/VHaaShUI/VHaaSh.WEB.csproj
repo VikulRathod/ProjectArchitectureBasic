@@ -2738,7 +2738,6 @@
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Controllers\SupplementsController.cs" />
-    <Compile Include="Controllers\vw_batchController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
