@@ -5,56 +5,197 @@
 }
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
+    <meta charset="utf-8">
+    <title>FatToFit</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="~/NewFreeTemplate/img/favicon.ico" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="~/NewFreeTemplate/lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="~/NewFreeTemplate/css/style.min.css" rel="stylesheet">
+
+
+
 </head>
-<body>
-    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
-    <script src="~/Scripts/jquery.validate.min.js"></script>
-    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
 
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-        @Html.ValidationSummary(true)
-    
-        <fieldset>
-            <legend>LoginRequest</legend>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.Username)
-            </div>
-            <div class="editor-field">
-                @Html.EditorFor(model => model.Username)
-                @Html.ValidationMessageFor(model => model.Username)
-            </div>
-
-            <div class="editor-label">
-                @Html.LabelFor(model => model.Password)
-            </div>
-            <div class="editor-field">
-                @Html.PasswordFor(model => model.Password)
-                @Html.ValidationMessageFor(model => model.Password)
-            </div>
-
-            <p>
-                <input type="submit" value="Log In" />
-            </p>
-        </fieldset>
-        <div>
-            @Html.ActionLink("New user?", "Register")
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Login</h4>
+            @*<div class="d-inline-flex">
+                    <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                    <p class="m-0 text-white px-2">/</p>
+                    <p class="m-0 text-white">Our Features</p>
+                </div>*@
         </div>
-    }
-
-    <div>
-        @if (!string.IsNullOrEmpty(ViewBag.LoginError))
-        {
-            <h2>Error in login. Please check username and password</h2>
-        }
-
     </div>
+    <!-- Page Header End -->
+
+
+    <div class="row container py-5">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <br><br><br>
+            <div class="login-box-body">
+                <p class="login-box-msg"><b>Sign in to start your session</b></p>
+
+
+                <div class="form-group has-feedback">
+                    <input name="ctl00$ContentPlaceHolder1$username" type="text" id="ContentPlaceHolder1_username" class="form-control" placeholder="Enter Login Id">
+                    <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                    <input name="ctl00$ContentPlaceHolder1$password" type="password" id="ContentPlaceHolder1_password" class="form-control" placeholder=" Enter Password">
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row" align="center">
+                    <div class="checkbox icheck">
+                        <span id="ContentPlaceHolder1_Label1" style="color:#CC0000;font-size:Small;font-weight:bold;"></span>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="checkbox icheck">
+                            <label>
+                                <a data-toggle="modal" data-target="#change_pswd">I forgot my password <i class="fa fa-arrow-circle-right"></i></a>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-xs-4">
+                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnlogin" value="Sign In" id="ContentPlaceHolder1_btnlogin" class="btn btn-primary btn-block btn-flat">
+                    </div>
+                    <!-- /.col -->
+                </div>
+
+                <!-- /.social-auth-links -->
+                <div class="modal fade" id="change_pswd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                Send Password Request
+                            </div>
+                            <div class="panel-body">
+                                <div class="form-group">
+                                    <div class="col-md-5" align="right">
+                                        <label>Enter User Id :</label>
+                                    </div>
+                                    <div class="col-md-7" align="center">
+                                        <input name="ctl00$ContentPlaceHolder1$txtforgot" type="text" id="ContentPlaceHolder1_txtforgot" class="form-control" placeholder="Enter User Id  *">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="form-group" align="center">
+                                    <div class="col-md-6">
+                                        <span id="ContentPlaceHolder1_txterror" style="color:Red;font-weight:bold;"></span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$btnfogot_request" value="Send Password Request" id="ContentPlaceHolder1_btnfogot_request" class="btn btn-danger">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.login-box-body -->
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="footer container-fluid mt-5 py-5 px-sm-3 px-md-5 text-white">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Get In Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Popular Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-primary mb-4">Opening Hours</h4>
+                <h5 class="text-white">Monday - Friday</h5>
+                <p>8.00 AM - 8.00 PM</p>
+                <h5 class="text-white">Saturday - Sunday</h5>
+                <p>2.00 PM - 8.00 PM</p>
+            </div>
+        </div>
+        <div class="container border-top border-dark pt-5">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
+                <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/NewFreeTemplate/lib/easing/easing.min.js"></script>
+    <script src="~/NewFreeTemplate/lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="~/NewFreeTemplate/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/NewFreeTemplate/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/NewFreeTemplate/js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('a').click(function () {
+                $('a.customLink.active').removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+        $('a').click(function () {
+            $(this).addClass('active');
+        });
+
+
+    </script>
 </body>
 </html>
