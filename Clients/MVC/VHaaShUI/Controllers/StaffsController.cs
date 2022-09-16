@@ -15,7 +15,7 @@ namespace VHaaSh.WEB.Controllers
         private T8GymDBEntities db = new T8GymDBEntities();
 
         // GET: TblStaffs
-        public ActionResult Index()
+        public ActionResult Index() 
         {
             var tblStaffs = db.TblStaffs.Include(t => t.TblBloodDetail).Include(t => t.TblCity).Include(t => t.TblGender).Include(t => t.TblState).Include(t => t.TblUser);
             return View(tblStaffs.ToList());
