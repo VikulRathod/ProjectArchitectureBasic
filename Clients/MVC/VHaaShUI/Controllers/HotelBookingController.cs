@@ -29,5 +29,10 @@ namespace VHaaSh.WEB.Controllers
         {
             return View();
         }
+
+        public ActionResult offers()
+        {
+            return View();
+        }
     }
 }

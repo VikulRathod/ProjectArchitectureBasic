@@ -47,24 +47,29 @@
 
 
                             @Html.ActionLink("Special Offers", "offers", null, new { @class = "btn btn-primary" })
-                            @Html.ActionLink("LOGIN", "Login", null, new { @class = "btn btn-primary" })
+                            @Html.ActionLink("LOGIN", "Login/Signup", null, new { @class = "btn btn-primary" })
+
 
                             @*<li><a href="index.html" class="active">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="tours.html">Our Tours</a></li>
-                                <li><a href="contact.html">Contact</a></li>*@
+        <li><a href="about.html">About</a></li>
+        <li><a href="tours.html">Our Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>*@
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <!-- Banner -->
+    
+
+     @*Banner*@ 
     <section class="tm-banner">
-        <!-- Flexslider -->
-        <div class="flexslider flexslider-banner">
+     @*Flexslider*@ 
+    <div class="flexslider flexslider-banner">
+
             <ul class="slides">
+
                 <li>
                     <div class="tm-banner-inner">
                         <h1 class="tm-banner-title">Find <span class="tm-yellow-text">The Best</span> Place</h1>
@@ -72,7 +77,7 @@
                         <a href="#more" class="tm-banner-link">Know More About Us</a>
                     </div>
                     <img src="~/Templates/img/Hotel Pic.jpg" />
-                    <img src="~/Templates/img/banner-1.jpg" alt="Image" />
+                    @*<img src="~/Templates/img/banner-1.jpg" alt="Image" />*@
                 </li>
                 <li>
                     <div class="tm-banner-inner">
@@ -93,7 +98,6 @@
             </ul>
         </div>
     </section>
-
     <!-- gray bg -->
     <section class="container tm-home-section-1" id="more">
         <div class="row">
@@ -238,64 +242,66 @@
         <div class="section-margin-top">
             <div class="row">
                 <div class="tm-section-header">
-                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+                    @*<div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
                     <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title">Lorem Ipsum Dolor</h2></div>
-                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>*@
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                     <div class="tm-home-box-2">
-                        <img src="~/Templates/img/index-03.jpg" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                        <img src="~/Templates/img/Udaipur.jpg" alt="image" class="img-responsive">
+                        <h3>Udaipur, formerly the capital of the Mewar Kingdom</h3>
                         <p class="tm-date">28 March 2016</p>
                         <div class="tm-home-box-2-container">
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Udaipur</span></a>
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                     <div class="tm-home-box-2">
-                        <img src="~/Templates/img/index-04.jpg" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                        <img src="~/Templates/img/Amritsar.jpg" alt="image" class="img-responsive">
+                        <h3>Amritsar is a city in the northwestern Indian state of Punjab</h3>
                         <p class="tm-date">26 March 2016</p>
                         <div class="tm-home-box-2-container">
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Amritsar</span></a>
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                     <div class="tm-home-box-2">
-                        <img src="~/Templates/img/index-05.jpg" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                        <img src="~/Templates/img/Goa.jpg" alt="image" class="img-responsive">
+                        <h3>Goa is a state in western India with coastlines stretching along the Arabian Sea.</h3>
                         <p class="tm-date">24 March 2016</p>
                         <div class="tm-home-box-2-container">
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Goa</span></a>
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
                     <div class="tm-home-box-2 tm-home-box-2-right">
-                        <img src="~/Templates/img/index-06.jpg" alt="image" class="img-responsive">
-                        <h3>Proin Gravida Nibhvel Lorem Quis Bind</h3>
+                        <img src="~/Templates/img/Lonavala.jpg" alt="image" class="img-responsive">
+                        <h3>Lonavala is a hill station surrounded by green valleys in western India near Mumbai.</h3>
                         <p class="tm-date">22 March 2016</p>
                         <div class="tm-home-box-2-container">
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Travel</span></a>
+                            <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description">Lonavla</span></a>
                             <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
                         </div>
                     </div>
                 </div>
+                
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="home-description">Holiday is free Bootstrap v3.3.5 responsive template for tour and travel websites. You can download and use this layout for any purpose. You do not need to provide a credit link to us. If you have any question, feel free to contact us. Credit goes to <a rel="nofollow" href="http://unsplash.com" target="_parent">Unsplash</a> for images used in this template.</p>
+                   <p class="home-description">Holiday app is  responsive  for tour and travel websites. You can download and use this app for any traveling purpose.</p>
+
                 </div>
             </div>
         </div>
@@ -304,73 +310,108 @@
     <!-- white bg -->
     <section class="tm-white-bg section-padding-bottom">
         <div class="container">
-            <div class="row">
+            <div class="row table-responsive">
                 <div class="tm-section-header section-margin-top">
-                    <div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
-                    <div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">Popular Packages</h2></div>
-                    <div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
+                    <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title"><b>Popular Packages</b></h2></div>
+                    <div class="col-lg-3 col-md-3 col-sm-3"><hr></div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="~/Templates/img/index-07.jpg" alt="image" class="img-responsive">
+                <div class="col-lg-12">
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/Family.jpg" alt="image" height="150" width="250">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-2-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Family package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/Honeymoon.jpg" alt="image" height="150" width="300">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-2-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Honeymoon package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/Summer.jpg" alt="image" height="150" width="300">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-2-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Summer package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="~/Templates/img/index-08.jpg" alt="image" class="img-responsive">
-                        </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                <div class="col-lg-12">
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/couple.jpg" alt="image" height="150" width="300">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-2-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Couple package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="~/Templates/img/index-09.jpg" alt="image" class="img-responsive">
-                        </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/Marriage.jpg" alt="image" height="150" width="250">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-1-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Marriage package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="tm-home-box-3">
-                        <div class="tm-home-box-3-img-container">
-                            <img src="~/Templates/img/index-10.jpg" alt="image" class="img-responsive">
-                        </div>
-                        <div class="tm-home-box-3-info">
-                            <p class="tm-home-box-3-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
-                            <div class="tm-home-box-2-container">
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
-                                <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Travel</span></a>
-                                <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                    <div class="col-lg-4">
+                        <div class="tm-home-box-3">
+                            <div class="tm-home-box-2-img-container">
+                                <img src="~/Templates/img/Winter.jpg" alt="image" height="150" width="250">
+                            </div><br />
+                            <div class="tm-home-box-1">
+                                <p class="tm-home-box-4-description">Proin gravida nibhvell velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+                                <div class="tm-home-box-1-container">
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-heart tm-home-box-2-icon border-right"></i></a>
+                                    <a href="#" class="tm-home-box-2-link"><span class="tm-home-box-2-description box-3">Winter package</span></a>
+                                    <a href="#" class="tm-home-box-2-link"><i class="fa fa-edit tm-home-box-2-icon border-left"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
     <footer class="tm-black-bg">

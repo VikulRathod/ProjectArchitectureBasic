@@ -189,9 +189,24 @@
     <Content Include="Templates\img\about-5.jpg" />
     <Content Include="Templates\img\about-6.jpg" />
     <Content Include="Templates\img\about-7.jpg" />
+    <Content Include="Templates\img\Amritsar.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\img\banner-1.jpg" />
     <Content Include="Templates\img\banner-2.jpg" />
     <Content Include="Templates\img\banner-3.jpg" />
+    <Content Include="Templates\img\couple.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\img\Family.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\img\Goa.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\img\Honeymoon.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\img\Hotel pic 2.jpg" />
     <Content Include="Templates\img\Hotel Pic 3.jpg" />
     <Content Include="Templates\img\Hotel Pic.jpg" />
@@ -206,7 +221,16 @@
     <Content Include="Templates\img\index-08.jpg" />
     <Content Include="Templates\img\index-09.jpg" />
     <Content Include="Templates\img\index-10.jpg" />
+    <Content Include="Templates\img\Lonavala.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\img\Marriage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\img\rating.png" />
+    <Content Include="Templates\img\Summer.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\img\tours-01.jpg" />
     <Content Include="Templates\img\tours-02.jpg" />
     <Content Include="Templates\img\tours-03.jpg" />
@@ -217,6 +241,12 @@
     <Content Include="Templates\img\tours-08.jpg" />
     <Content Include="Templates\img\tours-09.jpg" />
     <Content Include="Templates\img\tours-10.jpg" />
+    <Content Include="Templates\img\Udaipur.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Templates\img\Winter.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Templates\img\world-map.png" />
     <Content Include="Templates\js\bootstrap-datetimepicker.min.js" />
     <Content Include="Templates\js\bootstrap.min.js" />
