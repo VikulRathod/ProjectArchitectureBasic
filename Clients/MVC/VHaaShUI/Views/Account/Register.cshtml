@@ -25,7 +25,12 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="~/NewFreeTemplate/css/style.min.css" rel="stylesheet">
 
-
+    <style>
+        .form-check-input1 {
+            margin-top: 0.3rem;
+            margin-left: -1.25rem;
+        }
+    </style>
 
 </head>
 
@@ -44,7 +49,7 @@
 
 
 
-<div class=" form-horizontal container container py-5">
+<div class="container container py-5" style="margin-left: 500px;">
     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
         <p class="text-center h1 fw-bold mb-5 mt-4">Sign up</p>
@@ -55,12 +60,8 @@
                 <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
 
-                    @*<label> Your Name </label>
-                        <input type="text" id="txtName"class="form-control" /> <br> <br>*@
 
-
-                    <label class="form-label" for="form3Example1c" style="margin-left: 0px;">Your Name</label>
-                    <input type="text" id="form3Example1c" class="form-control">
+                    <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name">
                     <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;">
                         </div><div class="form-notch-middle" style="width: 71.2px;">
@@ -72,8 +73,7 @@
             <div class="d-flex flex-row align-items-center mb-4">
                 <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
-                    <input type="email" id="form3Example3c" class="form-control">
-                    <label class="form-label" for="form3Example3c" style="margin-left: 0px;">Your Email</label>
+                    <input type="email" id="form3Example3c" class="form-control" placeholder="Your Email">
                     <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 69.6px;"></div><div class="form-notch-trailing"></div></div>
                 </div>
             </div>
@@ -81,8 +81,7 @@
             <div class="d-flex flex-row align-items-center mb-4">
                 <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
-                    <input type="password" id="form3Example4c" class="form-control">
-                    <label class="form-label" for="form3Example4c" style="margin-left: 0px;">Password</label>
+                    <input type="password" id="form3Example4c" class="form-control" placeholder="Password">
                     <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div>
                 </div>
             </div>
@@ -90,14 +89,13 @@
             <div class="d-flex flex-row align-items-center mb-4">
                 <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
-                    <input type="password" id="form3Example4cd" class="form-control">
-                    <label class="form-label" for="form3Example4cd" style="margin-left: 0px;">Repeat your password</label>
+                    <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat your password">
                     <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 136px;"></div><div class="form-notch-trailing"></div></div>
                 </div>
             </div>
 
             <div class="form-check d-flex justify-content-center mb-5">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c">
+                <input class="form-check-input1 me-2" type="checkbox" value="" id="form2Example3c">
                 <label class="form-check-label" for="form2Example3">
                     I agree all statements in <a href="#!">Terms of service</a>
                 </label>
@@ -116,8 +114,8 @@
     <div class="row pt-5">
         <div class="col-lg-3 col-md-6 mb-5">
             <h4 class="text-primary mb-4">Get In Touch</h4>
-            <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-map-marker-alt mr-2"></i>Sinhgad road,Pune</p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+91 8888855555</p>
             <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
             <div class="d-flex justify-content-start mt-4">
                 <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40px;" href="#"><i class="fab fa-twitter"></i></a>
@@ -129,35 +127,47 @@
         <div class="col-lg-3 col-md-6 mb-5">
             <h4 class="text-primary mb-4">Quick Links</h4>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                @*<a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>*@
+
+                @Html.ActionLink("Home", "Index", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("About", "About", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Our Features", "feature", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Classes", "Class", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Contact", "Contact", "Default", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
             <h4 class="text-primary mb-4">Popular Links</h4>
             <div class="d-flex flex-column justify-content-start">
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
-                <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
-                <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                @*<a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Features</a>
+                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Classes</a>
+                    <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>*@
+
+                @Html.ActionLink("Trainers", "Index", "Trainers", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Batches", "Index", "Batches", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Offers", "Index", "OfferDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Events", "Index", "EventDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
+                @Html.ActionLink("Holidays", "Index", "HolidayDetails", null, new { @class = "text-white mb-3 fa fa-angle-right mr-2" })
             </div>
         </div>
         <div class="col-lg-3 col-md-6 mb-5">
             <h4 class="text-primary mb-4">Opening Hours</h4>
             <h5 class="text-white">Monday - Friday</h5>
-            <p>8.00 AM - 8.00 PM</p>
+            <p>6.00 AM - 10.00 PM</p>
             <h5 class="text-white">Saturday - Sunday</h5>
-            <p>2.00 PM - 8.00 PM</p>
+            <p>Holiday</p>
         </div>
     </div>
     <div class="container border-top border-dark pt-5">
         <p class="m-0 text-center text-white">
-            &copy; <a class="text-white font-weight-bold" href="#">Your Site Name</a>. All Rights Reserved. Designed by
-            <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            &copy; <a class="text-white font-weight-bold" href="#">FatToFit Glance</a>. All Rights Reserved. Designed by
+            <a class="text-white font-weight-bold" href="https://htmlcodex.com">TEAM 8</a>
         </p>
     </div>
 </div>
