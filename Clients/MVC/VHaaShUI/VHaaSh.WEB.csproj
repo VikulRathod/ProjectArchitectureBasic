@@ -2246,6 +2246,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="NewFreeTemplate\img\Team 1.jpg" />
+    <Content Include="NewFreeTemplate\img\Team 2.jpg" />
+    <Content Include="NewFreeTemplate\img\team.jpg" />
+    <Content Include="NewFreeTemplate\img\Teams 3.jpg" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.eot" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.ttf" />
     <Content Include="NewFreeTemplate\lib\flaticon\font\Flaticon.woff" />
