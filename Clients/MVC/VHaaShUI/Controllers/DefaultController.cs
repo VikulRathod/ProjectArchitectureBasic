@@ -21,10 +21,17 @@ namespace VHaaSh.WEB.Controllers
         {
             return View();
         }
+
+        [HttpGet]
         public ActionResult Class()
         {
             return View();
         }
+        public PartialViewResult BmiPartialView()
+        {
+            return PartialView("BMI");
+        }
+
         public ActionResult Contact()
         {
             return View();
