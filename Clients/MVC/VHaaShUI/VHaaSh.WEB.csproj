@@ -304,6 +304,7 @@
     <Content Include="Templates\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Templates\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\HotelBooking\Login.cshtml" />
+    <Content Include="Views\HotelBooking\offers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
