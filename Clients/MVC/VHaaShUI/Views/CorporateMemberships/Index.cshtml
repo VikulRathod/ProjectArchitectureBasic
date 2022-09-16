@@ -1,0 +1,52 @@
+﻿@model IEnumerable<VHaaSh.API.Modals.Database_Models.TblCorporateMembership>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MemberCount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration__mm_)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Discount)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MemberCount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duration__mm_)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Discount)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
