@@ -1,19 +1,25 @@
 ﻿@model IEnumerable<VHaaSh.API.Modals.Database_Models.TblTrainer>
 
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<!DOCTYPE html>
+<!-- Page Header Start -->
+@*<div class="container-fluid page-header mb-5">
+        <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
+            <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">Appointments</h4>
+            <div class="d-inline-flex">
+                <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+                <p class="m-0 text-white px-2">/</p>
+                <p class="m-0 text-white">Appointment List Us</p>
+            </div>
+        </div>
+    </div>*@
+<!-- Page Header End -->
+<div class="content-wrapper">
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <p>
-        @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create")
     </p>
     <table class="table">
         <tr>
@@ -55,53 +61,53 @@
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Contact)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Experience)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Certification)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rating)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Achievements)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblBloodDetail.BloodGroup)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblCity.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblGender.Gender)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblState.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TblUser.UserName)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Experience)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Certification)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Achievements)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblBloodDetail.BloodGroup)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblCity.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblGender.Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblState.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TblUser.UserName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
     </table>
-</body>
-</html>
+</div>

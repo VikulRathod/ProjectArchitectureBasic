@@ -59,8 +59,6 @@
             <div class="d-flex flex-row align-items-center mb-4">
                 <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                 <div class="form-outline flex-fill mb-0">
-
-
                     <input type="text" id="form3Example1c" class="form-control" placeholder="Your Name">
                     <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;">
@@ -91,6 +89,17 @@
                 <div class="form-outline flex-fill mb-0">
                     <input type="password" id="form3Example4cd" class="form-control" placeholder="Repeat your password">
                     <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 136px;"></div><div class="form-notch-trailing"></div></div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-row align-items-center mb-4">
+                <i class="fas fa-list fa-lg me-3 fa-fw"></i>
+                <div class="form-outline flex-fill mb-0">
+                    
+                    <select id="ddlroles" class="form-control">
+                        <option value="">--Select Role--</option>
+                    </select>
+                    
                 </div>
             </div>
 
@@ -201,6 +210,25 @@
         $(this).addClass('active');
     });
 
+
+
+ // Script for User Role (DropDown)
+        $(document).ready(function () {
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: "GetRole",
+                dataType: "json",
+                success: function (Result) {
+                    $.each(Result, function (key, value) {
+                        $("#ddlroles").append($("<option></option>").val(value.Id).html(value.Description));
+                    });
+                },
+                error: function (Result) {
+                    alert("Error");
+                }
+            });
+});
 
 </script>
 </body>

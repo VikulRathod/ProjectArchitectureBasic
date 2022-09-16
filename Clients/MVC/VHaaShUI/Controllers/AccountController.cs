@@ -10,6 +10,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using VHaaSh.API.Client.Services.Account;
 using VHaaSh.UI.BLL.Logs;
+using VHaaSh.API.Modals.Database_Models;
 
 namespace VHaaSh.WEB.Controllers
 {
@@ -17,6 +18,7 @@ namespace VHaaSh.WEB.Controllers
     {
         private IRegisterApiController _registerApi;
         private IApplicationLogsBL _logs;
+        private T8GymDBEntities db = new T8GymDBEntities();
 
         public AccountController(IRegisterApiController registerApi,
             IApplicationLogsBL logs)
@@ -167,6 +169,13 @@ namespace VHaaSh.WEB.Controllers
                 }
             }
             return View();
+        }
+
+        [HttpGet]
+        public JsonResult GetRole()
+        {
+            var roles = db.TblRoles.ToList();
+            return Json( roles , JsonRequestBehavior.AllowGet);
         }
     }
 }

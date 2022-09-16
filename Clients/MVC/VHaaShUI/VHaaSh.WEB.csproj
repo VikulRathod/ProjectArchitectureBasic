@@ -2746,6 +2746,7 @@
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\StaffsController.cs" />
     <Compile Include="Controllers\SupplementsController.cs" />
+    <Compile Include="Controllers\TrainersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2866,6 +2867,11 @@
     <Content Include="Views\vw_batch\Edit.cshtml" />
     <Content Include="Views\vw_batch\Index.cshtml" />
     <Content Include="Views\Default\BMI.cshtml" />
+    <Content Include="Views\Trainers\Create.cshtml" />
+    <Content Include="Views\Trainers\Delete.cshtml" />
+    <Content Include="Views\Trainers\Details.cshtml" />
+    <Content Include="Views\Trainers\Edit.cshtml" />
+    <Content Include="Views\Trainers\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
