@@ -1,0 +1,128 @@
+﻿@model VHaaSh.API.Modals.Database_Models.TblTrainer
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>TblTrainer</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Contact)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Contact)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Experience)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Experience)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Certification)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Certification)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Rating)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Rating)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Age)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Age)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Achievements)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Achievements)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TblBloodDetail.BloodGroup)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TblBloodDetail.BloodGroup)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TblCity.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TblCity.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TblGender.Gender)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TblGender.Gender)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TblState.Name)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TblState.Name)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.TblUser.UserName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TblUser.UserName)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
