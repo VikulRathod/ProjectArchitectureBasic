@@ -42,7 +42,7 @@
 </head>
 
 <body>
-    <div class="container w-50 mt-5 table table-bordered p-5">
+    <div class="container col-md-6 mt-5 table table-bordered p-5 border-success" style="width:500px">
         <form>
             <!-- Email input -->
             <div class="form-outline mb-4">
@@ -73,14 +73,16 @@
             </div>
 
             <!-- Submit button -->
-            <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+            <button type="button" class="btn btn-success btn-block mb-4" style="">Sign in</button>
 
             <!-- Register buttons -->
             <div class="text-center">
-                <p>Not a member? <a href="#!">Register</a></p>
+                <p>Not a member? 
+                @Html.ActionLink("Register","Register","Account")
+                </p>
                 <p>or sign up with:</p>
                 <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f" style="color:blue"></i>
                 </button>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
@@ -88,11 +90,12 @@
                 </button>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter" style="color:aqua"></i>
                 </button>
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-github" style="color:black">
+                    </i>
                 </button>
             </div>
         </form>

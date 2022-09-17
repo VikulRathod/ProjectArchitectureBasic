@@ -50,11 +50,11 @@
 
 
 
-    <div class="container container py-5" style="margin-left: 500px;">
-        <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+    <div class="container w-50" style="">
+        <div class="">
 
 
-            <form class="table table-bordered p-5 ml-5 " style="width:500px;">
+            <form class="table table-bordered p-5 align-content-center bord" style="">
 
                 <div class="d-flex flex-row align-items-center mb-4">
                     <i class="fas fa-user fa-lg me-3 fa-fw"></i>
@@ -105,15 +105,21 @@
 
                 <div class="form-check d-flex justify-content-center mb-5">
                     <input class="form-check-input1 me-2 mb-1" type="checkbox" value="" id="form2Example3c">
-                    <label class="form-check-label small ml-3" for="form2Example3">
-                        I agree all statements in <a href="#!" class="small">Terms of service</a>
+                    <label class="form-check-label  ml-3" for="form2Example3">
+                        I agree all statements in <a href="#!" class="">Terms of service</a>
                     </label>
                 </div>
 
                 <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-success btn-lg">Register</button>
+                    <button type="button" class="btn btn-success btn-lg text-center w-75">Register</button>
                 </div>
 
+                <div class="text-center ">
+                    <p>
+                        Already a member?
+                        @Html.ActionLink("Login", "Login", "Account", new {@class= "text-danger" })
+                    </p>
+                </div>
             </form>
 
         </div>

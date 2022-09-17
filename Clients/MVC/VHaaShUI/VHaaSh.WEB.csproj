@@ -2861,11 +2861,6 @@
     <Content Include="Views\CorporateMemberships\Details.cshtml" />
     <Content Include="Views\CorporateMemberships\Edit.cshtml" />
     <Content Include="Views\CorporateMemberships\Index.cshtml" />
-    <Content Include="Views\vw_batch\Create.cshtml" />
-    <Content Include="Views\vw_batch\Delete.cshtml" />
-    <Content Include="Views\vw_batch\Details.cshtml" />
-    <Content Include="Views\vw_batch\Edit.cshtml" />
-    <Content Include="Views\vw_batch\Index.cshtml" />
     <Content Include="Views\Default\BMI.cshtml" />
     <Content Include="Views\Trainers\Create.cshtml" />
     <Content Include="Views\Trainers\Delete.cshtml" />
