@@ -3,7 +3,12 @@
     <div class="d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5" style="min-height: 400px">
         <h4 class="display-4 mb-3 mt-0 mt-lg-5 text-white text-uppercase font-weight-bold">About Us</h4>
         <div class="d-inline-flex">
-            <p class="m-0 text-white"><a class="text-white" href="">Home</a></p>
+            <p class="m-0 text-white">
+                @*<a class="text-white" href="">Home</a>*@
+                @Html.ActionLink("Home", "Index", null, new { @class = "text-white" })
+
+            </p>
+
             <p class="m-0 text-white px-2">/</p>
             <p class="m-0 text-white">About Us</p>
         </div>
@@ -124,10 +129,10 @@
             <div class="card border-0 bg-secondary text-center text-white">
                 <img class="card-img-top" src="~/NewFreeTemplate/img/Team 1.jpg" alt="" style="height:320px">
                 <div class="card-social d-flex align-items-center justify-content-center">
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"  style="width: 40px; height: 40Px;"  href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"  style="width: 40px; height: 40Px;"  href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"  style="width: 40px; height: 40Px;"  href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0"  style="width: 40px; height: 40Px;"  href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40Px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40Px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40Px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light rounded-circle text-center mr-2 px-0" style="width: 40px; height: 40Px;" href="#"><i class="fab fa-instagram"></i></a>
                 </div>
                 <div class="card-body bg-secondary">
                     <h4 class="card-title text-primary">Snehal</h4>
