@@ -328,20 +328,20 @@
                             <div class="col form-group">
                                 @*@Html.TextBox("Weight", null, new { @class = "form-control form-control-lg bg-dark text-white", placeholder = "Weight (KG)", id = "TxtWeight" })*@
 
-                                <input type="text" id="TxtWeight" class="form-control form-control-lg bg-dark text-white" placeholder="Weight (KG)">
+                                <input type="text" id="TxtWeight" class="form-control form-control-lg bg-dark text-white" data-toggle="tooltip" data-placement="top" title="Weight (KG)" placeholder="Weight (KG)">
                             </div>
                             <div class="col form-group swal2-popup">
                                 @*@Html.TextBox("Height", null, new { @class = "form-control form-control-lg bg-dark text-white"data-toggle = "popover" data - content = "Specify required content inside popover", placeholder = "Height (CM)", id = "TxtHeight", })*@
-                                <input type="text" title="Height" id="TxtHeight" class="form-control form-control-lg bg-dark text-white " placeholder="Height (CM)">
-
+                                <input type="text" id="TxtHeight" class="form-control form-control-lg bg-dark text-white" data-toggle="tooltip" data-placement="top" title="Height (CM)" placeholder="Height (CM)">
+                                @*<input data-toggle="tooltip" data-placement="top" title="This is the text of the tooltip" value="44" />*@
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col form-group">
-                                <input type="text" id="TxtAge" class="form-control form-control-lg bg-dark text-white" placeholder="Age">
+                                <input type="text" id="TxtAge" class="form-control form-control-lg bg-dark text-white" data-toggle="tooltip" data-placement="top" title="Age" placeholder="Age">
                             </div>
                             <div class="col form-group">
-                                <select id="DdlGender" class="custom-select custom-select-lg bg-dark text-muted">
+                                <select id="DdlGender" class="custom-select custom-select-lg bg-dark text-muted" data-toggle="tooltip" data-placement="top" title="Gender">
                                     <option>Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
