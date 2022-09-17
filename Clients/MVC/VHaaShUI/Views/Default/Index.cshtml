@@ -7,7 +7,8 @@
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                     <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Best Gym In Town</h2>
-                    <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                    @*<a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>*@
+                    @Html.ActionLink("Join Us Now", "Register", "Account", null, new { @class = "btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5" })
                 </div>
             </div>
             <div class="carousel-item">
@@ -15,7 +16,9 @@
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <h3 class="text-primary text-capitalize m-0">Gym & Fitness Center</h3>
                     <h2 class="display-2 m-0 mt-2 mt-md-4 text-white font-weight-bold text-capitalize">Get Body In Shape</h2>
-                    <a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>
+                    @*<a href="" class="btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5">Join Us Now</a>*@
+                    @Html.ActionLink("Join Us Now", "Register", "Account", null, new { @class = "btn btn-lg btn-outline-light mt-3 mt-md-5 py-md-3 px-md-5" })
+
                 </div>
             </div>
         </div>
@@ -38,7 +41,9 @@
                 <p>
                     Don’t be scared to LIFT HEAVY! You won’t get huge and bulky, you’ll just get amazing.
                 </p>
-                <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+                @*<a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>*@
+                @Html.ActionLink("Join Now", "Register", "Account", null, new { @class = "btn btn-lg btn-outline-light mt-4 px-4" })
+
             </div>
         </div>
         <div class="col-md-6 p-0">
@@ -48,7 +53,9 @@
                 <p>
                     The meaning of life is not simply to exist, to survive, but to move ahead, to go up, to conquer.
                 </p>
-                <a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>
+                @*<a href="" class="btn btn-lg btn-outline-light mt-4 px-4">Join Now</a>*@
+                @Html.ActionLink("Join Now", "Register", "Account", null, new { @class = "btn btn-lg btn-outline-light mt-4 px-4" })
+
             </div>
         </div>
     </div>
@@ -497,18 +504,22 @@
                     <form>
                         <div class="form-row">
                             <div class="col form-group">
-                                <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Weight (KG)">
+                                @*@Html.TextBox("Weight", null, new { @class = "form-control form-control-lg bg-dark text-white", placeholder = "Weight (KG)", id = "TxtWeight" })*@
+
+                                <input type="text" id="TxtWeight" class="form-control form-control-lg bg-dark text-white" placeholder="Weight (KG)">
                             </div>
                             <div class="col form-group">
-                                <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Height (CM)">
+                                @*@Html.TextBox("Height", null, new { @class = "form-control form-control-lg bg-dark text-white"data-toggle = "popover" data - content = "Specify required content inside popover", placeholder = "Height (CM)", id = "TxtHeight", })*@
+                                <input type="text" title="Height" id="TxtHeight" class="form-control form-control-lg bg-dark text-white " placeholder="Height (CM)">
+
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col form-group">
-                                <input type="text" class="form-control form-control-lg bg-dark text-white" placeholder="Age">
+                                <input type="text" id="TxtAge" class="form-control form-control-lg bg-dark text-white" placeholder="Age">
                             </div>
                             <div class="col form-group">
-                                <select class="custom-select custom-select-lg bg-dark text-muted">
+                                <select id="DdlGender" class="custom-select custom-select-lg bg-dark text-muted">
                                     <option>Gender</option>
                                     <option>Male</option>
                                     <option>Female</option>
@@ -517,10 +528,34 @@
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <input type="button" class="btn btn-lg btn-block btn-dark border-light"
-                                       value="Calculate Now">
+                                @*<input type="button" id="BtnCalculate" class="btn btn-lg btn-block btn-dark border-light"
+                                    value="Calculate Now">*@
+                                <button type="button" id="BtnCalculate" class="form-control form-control-lg bg-dark text-white" data-toggle="modal" data-target="#myModal">Calculate Now</button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="myModal" role="dialog">
+                                    <div class="modal-dialog modal-sm">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Your BMI is</h4>
+
+                                                <button type="button" id="BtnClosex" class="close" data-dismiss="modal">&times;</button>
+
+                                            </div>
+                                            <div class="modal-body">
+                                                <input type="text" id="BMI" class="form-control form-control-lg bg-dark text-white" placeholder="BMI">
+                                                <img src="~/NewFreeTemplate/img/BMI.png">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" id="BtnClose" class="btn btn-default" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -749,4 +784,61 @@
             window.open("http://localhost:49974/Account/Login");
         })
     })
+</script>
+@*Script for BMI Calculator*@
+<script>
+
+    $(function () {
+        $('#BtnCalculate').click(function () {
+            var w = $('#TxtWeight').val();
+
+            var h1 = $('#TxtHeight').val();
+
+            var h2 = h1 / 100;
+
+            var h = h2 * h2;
+
+            var Result1 = w / h;
+
+            var Result = Math.floor(Result1);
+
+            var diff = Result1 - Result;
+            diff = diff * 10;
+
+            diff = Math.round(diff);
+            if (diff == 10) {
+                // Need to bump up the whole thing instead
+                Result += 1;
+                diff = 0;
+            }
+            var bmi = Result + "." + diff;
+
+            $('#BMI').val(bmi);
+
+
+        });
+
+        $('#BtnClose').click(function () {
+            $('#TxtWeight').val(" ");
+
+            $('#TxtHeight').val(" ");
+
+            $('#TxtAge').val(" ");
+
+            $('#DdlGender').val(" ");
+        });
+        $('#BtnClosex').click(function () {
+            $('#TxtWeight').val(" ");
+
+            $('#TxtHeight').val(" ");
+
+            $('#TxtAge').val(" ");
+
+            $('#DdlGender').val(" ");
+        });
+
+
+    });
+
+
 </script>
