@@ -2256,6 +2256,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="NewFreeTemplate\img\BMI.png" />
     <Content Include="NewFreeTemplate\img\Team 1.jpg" />
     <Content Include="NewFreeTemplate\img\Team 2.jpg" />
     <Content Include="NewFreeTemplate\img\team.jpg" />
