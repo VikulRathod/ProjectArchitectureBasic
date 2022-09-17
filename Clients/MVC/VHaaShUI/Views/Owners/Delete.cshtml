@@ -21,7 +21,7 @@
 
 <div @*class="container py-5"*@ class="container w-50 mt-5 table table-bordered p-5">
     <h3>Are you sure you want to delete this?</h3>
-    
+
     <hr />
     <dl class="dl-horizontal container py-5">
         <dt>
@@ -87,8 +87,8 @@
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
             @Html.ActionLink("Back to List", "Index")
         </div>
-    }
+     }
 </div>
