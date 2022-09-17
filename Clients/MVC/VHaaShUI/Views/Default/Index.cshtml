@@ -147,7 +147,7 @@
                     <p>
                         In terms of fitness and training, everyone is unique. Some people need
                         one on one personal training programs, while for others Group training options may be ideal for some and not others.
-                       
+
                     </p>
                 </div>
             </div>
@@ -207,9 +207,8 @@
     <p class="text-white mb-4">We value your time.</p>
     <form class="form-inline justify-content-center mb-5">
         <div class="input-group">
-            @*<input type="text" class="form-control-lg" placeholder="Your Email">*@
             <div class="input-group-append">
-                <button class="btn btn-primary" type="submit" id="btnBookNow">Book Now</button>
+                <input type="button" name="btnBook" value="Book Now" id="btnBookNow" class="btn btn-primary" />
             </div>
         </div>
     </form>
@@ -737,3 +736,18 @@
     </div>
 </div>
 <!-- Blog End -->
+<script>
+
+    @*function Redirect() {
+        window.alert("Clicked");
+        debugger;
+        window.location.pathname =  @Url.Action("Login", "Account",null,"http",null);
+    }*@
+
+    $(function () {
+        $("#btnBookNow").click(function () {
+            window.alert("Clicked");
+            window.open("http://localhost:49974/Account/Login");
+        })
+    })
+</script>
