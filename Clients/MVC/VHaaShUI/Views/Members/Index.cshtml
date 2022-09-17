@@ -90,12 +90,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.TblState.Name)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TblStaff1.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.TblUser.UserName)
-            </th>
+            
             <th></th>
         </tr>
 
@@ -165,12 +160,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.TblState.Name)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TblStaff1.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.TblUser.UserName)
-                </td>
+
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
                     @Html.ActionLink("Details", "Details", new { id = item.ID }) |

@@ -17,7 +17,7 @@ namespace VHaaSh.WEB.Controllers
         // GET: Members
         public ActionResult Index()
         {
-            var tblMembers = db.TblMembers.Include(t => t.TblBatch).Include(t => t.TblBloodDetail).Include(t => t.TblCity).Include(t => t.TblCorporateMembership).Include(t => t.TblGender).Include(t => t.TblLevel).Include(t => t.TblMembership).Include(t => t.TblStaff).Include(t => t.TblState).Include(t => t.TblStaff1).Include(t => t.TblUser);
+            var tblMembers = db.TblMembers.Include(t => t.TblBatch).Include(t => t.TblBloodDetail).Include(t => t.TblCity).Include(t => t.TblCorporateMembership).Include(t => t.TblGender).Include(t => t.TblLevel).Include(t => t.TblMembership).Include(t => t.TblStaff).Include(t => t.TblState);
             return View(tblMembers.ToList());
         }
 
