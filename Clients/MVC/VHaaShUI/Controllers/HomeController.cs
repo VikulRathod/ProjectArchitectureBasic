@@ -17,6 +17,7 @@ namespace VHaaSh.WEB.Controllers
 
         public ActionResult Index()
         {
+            //Test
             return View();
         }
 
