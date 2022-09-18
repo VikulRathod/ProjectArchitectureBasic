@@ -22,7 +22,6 @@ namespace VHaaSh.WEB.Controllers
 
         public ActionResult Welcome()
         {
-            //welcome test
             return View();
         }
     }
