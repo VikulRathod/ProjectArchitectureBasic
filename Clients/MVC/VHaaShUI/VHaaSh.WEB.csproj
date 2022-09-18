@@ -218,6 +218,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DriverController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PaymentsController.cs" />
     <Compile Include="Controllers\TransportHomeController.cs" />
@@ -252,6 +253,7 @@
     <Content Include="Views\TransportHome\Shop.cshtml" />
     <Content Include="Views\TransportHome\Register.cshtml" />
     <Content Include="Views\TransportHome\Login.cshtml" />
+    <Content Include="Views\Driver\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

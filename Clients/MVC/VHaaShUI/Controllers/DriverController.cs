@@ -6,21 +6,10 @@ using System.Web.Mvc;
 
 namespace VHaaSh.WEB.Controllers
 {
-    [Authorize]
-    public class HomeController : Controller
+    public class DriverController : Controller
     {
-
-        
-        //test11
-
-        [AllowAnonymous] //Filter
-
+        // GET: Driver
         public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Welcome()
         {
             return View();
         }

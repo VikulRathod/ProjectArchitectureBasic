@@ -1,0 +1,107 @@
+﻿@*@{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <style>
+        .margin-left {
+            margin-left: 80px ;
+        }
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+
+    </style>
+</head>
+
+<body class="container">
+    <div class="well text-center">
+        <h1 style="color:#1898f5">Drivers List</h1>
+    </div>
+    <div class="btn-toolbar text-center well">
+        <button type="button" class="btn btn-primary  btn-color btn-bg-color btn-lg col-md-2 margin-left">
+            Place Order
+        </button>
+        <button type="button" class="btn btn-primary btn-color btn-bg-color btn-lg col-md-2 margin-left">
+            Orders List
+        </button>
+        <button type="button" class="btn btn-primary btn-color btn-bg-color btn-lg col-md-2 margin-left">
+            HISTORY
+        </button>
+
+        <button type="button" class="btn btn-primary btn-color btn-bg-color btn-lg col-md-2 margin-left">
+            Drivers List
+        </button>
+        <button type="button" class="btn btn-primary btn-color btn-bg-color btn-lg col-md-2 margin-left">
+            Wallet
+        </button>
+    </div>
+
+
+
+    <div class="well text-center">
+       
+        <head>
+            <style>
+                table {
+                    font-family: arial, sans-serif;
+                    border-collapse: collapse;
+                    width: 100%;
+                }
+
+                td, th {
+                    border: 1px solid #dddddd;
+                    text-align: left;
+                    padding: 8px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #dddddd;
+                }
+            </style>
+        </head>
+        <body>
+
+
+
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Oredr Id</th>
+                <th>Status</th>
+                <th>Delivery Date</th>
+                <th>Route</th>
+                <th>Type</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>786</td>
+                <td>Assigned</td>
+                <td><input type="datetime-local"/></td>
+                <td>Delhi-Pune</td>
+                <td>Industrial Heavy Machinery</td>
+                <td>44564 INR</td>
+            </tr>
+           
+           
+        </tbody>
+      @*Yet not mde dynamic*@
+
+    </table>
+
+        </body>
+</div>
+
+</body>
+</html>
