@@ -43,6 +43,7 @@ namespace VHaaSh.WEB.Controllers
         public ActionResult Single()
         {
             return View();
+
         }
     }
 }
