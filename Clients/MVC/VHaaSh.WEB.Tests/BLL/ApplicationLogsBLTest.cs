@@ -8,7 +8,7 @@ namespace VHaaSh.WEB.Tests.BLL
     [TestFixture]
     public class ApplicationLogsBLTest
     {
-        // It is failing need to fix
+        
         [Test]
         public void Debug_WhenCalled_ThenLogsToDB()
         {
