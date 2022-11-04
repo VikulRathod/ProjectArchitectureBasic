@@ -12,7 +12,7 @@ namespace VHaaSh.WEB.Controllers
         [AllowAnonymous] //Filter
         public ActionResult Index()
         {
-            //aa
+            
             return View();
         }
 
