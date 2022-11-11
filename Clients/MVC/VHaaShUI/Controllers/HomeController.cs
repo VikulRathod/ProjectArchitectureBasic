@@ -9,9 +9,10 @@ namespace VHaaSh.WEB.Controllers
     [Authorize]
     public class HomeController : Controller
     {
-        [AllowAnonymous]
+        // [AllowAnonymous]
         public ActionResult Index()
         {
+            // returns view cotent
             return View();
         }
 
