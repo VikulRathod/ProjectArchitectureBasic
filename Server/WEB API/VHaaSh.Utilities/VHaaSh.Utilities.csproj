@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DateTimeHelper.cs" />
+    <Compile Include="IDateTimeHelper.cs" />
     <Compile Include="ILoginHelper.cs" />
     <Compile Include="LoginHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
