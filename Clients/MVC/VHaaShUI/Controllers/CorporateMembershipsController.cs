@@ -10,6 +10,7 @@ using VHaaSh.API.Modals.Database_Models;
 
 namespace VHaaSh.WEB.Controllers
 {
+    
     public class CorporateMembershipsController : Controller
     {
         private T8GymDBEntities db = new T8GymDBEntities();
